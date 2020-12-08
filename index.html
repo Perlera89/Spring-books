@@ -1,18 +1,7 @@
-<!DOCTYPE html> <!--Tipo de documento-->
-<html lang="es"> <!--Estructura principal e Idioma del documento-->
-<head> <!--Inicio cabecera-->
-
-    <meta charset="UTF-8"> <!--Caracteres del documento-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Compatibilidad con tamaños de pantalla-->
-    <meta name="description" content="Este es un documento HTML5"> <!--Descripcion del documento-->
-    <meta name="keywords" content="HTML, CSS, JavaScript"> <!---Lenguajes del documento-->
-
-    <link rel="icon" href="Galeria/Prueba.png" type="image/png" sizes="16x16"> <!--Logo del documento-->
-    <link rel="stylesheet"  href="Practica.css"> <!--Archivo CSS-->
-
-    <title>Inicio</title>
-
- <link rel = "icon" href ="img/logo.png" type = "image/x-icon"> 
+<html lang="es">
+<head>
+  <title>Spring Books</title>
+ <link rel = "icon" href ="img/icono.png" type = "image/x-icon"> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -28,109 +17,159 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-
-  <div>
-      <!--Header-->
-    <div class="navbar-header"> 
-
+    
+    <body>
+        <nav cla<!DOCTYPE html>
+ss="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href=""><img src="img/logo.gif" height="142" width="143"
+          /></a>
+        <button type="button" class="navbar-toggle ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+      </button>
     </div>
-    <div>
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-right">
+          
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Contactanos</a></li>
+      </ul>
     </div>
   </div>
-
+</nav>
 
         <!--Barra de navegación-->
-<div></div>
-<div>
+<div style="background-color: black; height: 50px; width: 100%;"></div>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
  <!-- Indicadores -->
-
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
   
   <!-- Paginas -->
-  <div>
-    <div>
-      <div></div>
-      <div >
-
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Los mejores libros</h1>        
+            <h2 id="hero1">Para tus estudios</h2>
+        </hgroup>
       </div>
     </div>
-    <div>
-      <div></div>
-      <div>        
-       
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Libros gratis para todos</h1>        
+            <h2 id="hero1">Publicamos nuevos cada semana</h2>
+        </hgroup>       
       </div>
     </div>
-    <div>
-      <div></div>
-      <div>        
-
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Busca el libro que deseas.</h1>        
+            <h2 id="hero1">No te preocupes por el pago.</h2>
+        </hgroup>
       </div>
     </div>
   </div> 
 </div>
-<div></div>
-
-          <div>
+<div style="background-color: black; height: 50px; width: 100%;"></div>
+        
+        <h3 id="all_books">Todos los libros</h3>
+        <br>
+                <form style="float:none;" class="example">
+                    <input type="text" placeholder="Buscar el nombre del autor" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+        <br>
+          <div class="row">
   <div class="column">
-
+      <a href="book.html">
     <div class="card">
-
+        <img src="img/Habitos.jpg" class="img-responsive" height="200" width="200">
+      <h3>Los 7 hábitos de la gente altamente efectiva</h3>
+      <p>Stephen R. Covey</p>
+      <p style="color: maroon; font-weight: bold;"><strike style="color: dimgrey;">$ 9.45</strike> Gratis</p>
+        <p>Publicaciones</p>
     </div>
       </a>
   </div>
 
   <div class="column">
-
+      <a href="book.html">
+    <div class="card">
+        <img src="img/Filosofia.jpg" class="img-responsive" height="200" width="200">
+     <h3>Filosofía para Dummies</h3>
+      <p>Tom Morris</p>
+      <p style="color: maroon; font-weight: bold;"><strike style="color: dimgrey;">$ 16.95</strike> Gratis</p>
+        <p><br><br><br>Publicaciones</p>
     </div>
-
+          </a>
   </div>
   
-  <div class="columna">
-
+  <div class="column">
+      <a href="book.html">
     <div class="card">
-
+        <img src="img/Fisica.jpg" class="img-responsive" height="200" width="200">
+      <h3>Fundamentos de Física</h3>
+      <p>Raymond A. Serway</p>
+      <p style="color: maroon; font-weight: bold;"><strike style="color: dimgrey;">$ 30.80</strike> Gratis</p>
+        <p><br><br><br>Publicaciones</p>
     </div>
-
+      </a>
   </div>
   
-  <div class="columna">
-
+  <div class="column">
+      <a href="book.html">
     <div class="card">
-
+        <img src="img/Calculo.jpg" class="img-responsive" height="200" width="200">
+      <h3>Cálculo de una variable</h3>
+      <p>James Stewart</p>
+      <p style="color: maroon; font-weight: bold;"><strike style="color: dimgrey;">$ 136.00</strike> Gratis</p>
+        <p><br><br><br> Publicaciones</p>
     </div>
-
+      </a>
   </div>
-    <div class="columna">
-
+    <div class="column">
+        <a href="book.html">
     <div class="card">
-
+        <img src="img/Programacion web.jpg" class="img-responsive" height="200" width="200">
+      <h3>El gran libro de HTML5, CSS3 y JavaScript</h3>
+      <p>J.D. Gauchad</p>
+      <p style="color: maroon; font-weight: bold;"><strike style="color: dimgrey;">$ 80.73</strike> Gratis</p>
+        <p><br> Publicaciones</p>
     </div>
+        </a>
+  </div>
     
-  </div>
-    <div class="columna">
-     
-    <div class="card">
-
-    </div>
-
-  </div>
 </div>
-    <!--Pie de pagina-->
+    
     <div class="footer" style="background-color: black;">
          <div class="container">
-                <div class="row" id="columna">
-
+                <div class="row" id="column">
+                    <a id="column">Inicio</a> <a id="column">Contactanos</a>
                 </div>
-              <div id="espaciado-de-medios">
-
+              <div id="media_spacing">
+                <ul id="media_icons">
+                    <a id="links" href="https://www.facebook.com/jenny.tejada.33821"><li id="media_list"><i class="fab fa-facebook"></i></li></a>
+                    <a id="links" href="https://instagram.com/__peke.___?igshid=16h4lxpdgxuja"><li id="media_list"><i class="fab fa-instagram"></i></li></a>
+                    <a id="links" href="https://www.linkedin.com/in/rigoberto-mendez-893a631b3/"><li id="media_list"><i class="fab fa-linkedin-in"></i></li></a>
+                    
+                </ul>
               </div>
              
-             <div class="fila" id="columna1">
-                    © Derechos Reservados Manuel Perlera 2020
-                </div>
+              <div class="row" id="column1">© Derechos Reservados Spring-Boooks-2020</div>
         </div>
     </div>
         
     </body>
+
 </html>
