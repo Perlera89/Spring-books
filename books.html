@@ -5,43 +5,50 @@
     <title>Información</title> <!--Titulo de la pagina-->
     <link rel="icon" href="img/icono.png" type="image/x-icon" /> <!--Icono del documento-->
     <meta charset="utf-8" /> <!--Caracteres del documento-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--Compatibilidad con tamaños de pantalla-->
+    <meta name="description" content="Spring Books es una libreria gratuita"> <!--Descripcion del documento-->
+
+<!--Links de dependencias para la pagina-->
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    /><!--link de la dependencia de bootstap para unos estilos-->
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--Link de fontAwesome que nos servira para unos iconos como los de las redes sociales-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para unos estilos-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--link de la dependencia de jquery para unos estilos-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para estilos-->
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"  
       rel="stylesheet"
-    />
+    /> <!--Api de google para fuentes de texto Lato-->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
       rel="stylesheet"
-    />
+    /> <!--Api de google para fuentes de texto Satisfy-->
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> <!--Link de dependencia con ajax para animaciones con awesome-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--link de la dependencia de jquery para unos estilos-->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/styles1.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para unos estilos-->
+    <link rel="stylesheet" href="css/styles.css" /> <!--Link de estilos de la pagina principal-->
+    <link rel="stylesheet" href="css/styles1.css" /> <!--link de estilos de esta pagina-->
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg"> <!--Division de la barra de navegación-->
       <div class="container-fluid">
         <div class="navbar-header"> <!--Donde esta el logo-->
-          <a class="navbar-brand" href="https://www.notesflix.in"
-            ><img src="img/logo.gif" height="250" width="250"
-          /></a>
+          <a class="navbar-brand" href="" 
+            ><img src="img/logo.gif" height="250" width="250" 
+          /></a> <!--Propiedades del logo-->
           <button
             type="button"
             class="navbar-toggle ml-auto"
@@ -96,7 +103,7 @@
             <h3>Reseña del libro:</h3>
             <br />
             <p>Casi todo el mundo intuye que su comportamiento, tanto en el trabajo como en la vida privada pordría mejorar en muchos aspectos, pero pocos saben cómo conseguirlo. Stephen R. Covey, el llamado Sócrates americano, no da consejos paternalistas ni se dedica a sermonear sin ton ni son. Su método es claro, certero y eficiente: un cursillo dividido en siete etapas que el lector deberá asimilar y poner en práctica por su propia cuenta, adaptándolas a su personalidad y aplicándolas libremente en todos los ámbitos de la vida empresarial. Para ello, el autor se sirve de anécdotas penetrantes y significativas destinadas a hacernos reflexionar sobre cada uno de nuestros actos y sobre el modo de acceder al cambio, a la verdadera efectividad: desde la visión personal hasta la renovación equilibrada, pasando por el liderazgo personal, la administración personal, el liderazgo interpersonal, la comunicación empática y la cooperación creativa. Teniendo en cuenta todo lo anterior, y a través del desarrollo de ciertos conceptos, el lector acaba comprendiendo que todo lo que hagamos deberá estar de acuerdo con lo que verdaderamente captamos de la realidad que nos rodea. Por tanto, si queremos cambiar la situación, deberemos cambiarnos a nosotros mismos con eficacia y para ello también modificar nuestras percepciones. El resultado es la construcción de una autoconfianza a prueba de bomba a través del desarrollo del propio carácter, de la integridad, la honestidad y la dignidad humana necesarias para transformar nuestro universo laboral en algo auténtico e intransferible.<br><br></p>
-          <button id="place_order" onclick="showPopUpMessage()">Obtener mas infromación</button>
+          <button id="place_order" onclick="showPopUpMessage()">Obtener mas infromación</button> <!--No implementado aun-->
           <br />
           <em></em>
         </div>
@@ -122,10 +129,12 @@
           </ul>
         </div>
 
+        <!--Pie de pagina-->
+
         <div class="row" id="column1">© Derechos Reservados Spring-Boooks-2020</div>
       </div>
     </div>
-    <script src="js/pop-up.js" type="text/javascript"></script>
+    <script src="js/pop-up.js" type="text/javascript"></script> <!--ventana emergente-->
     
   </body>
 </html>
