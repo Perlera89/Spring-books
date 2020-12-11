@@ -1,102 +1,114 @@
 <!DOCTYPE html> <!--Tipo de documento-->
 <html lang="es"> <!--Estructura principal e Idioma del documento-->
-<head><!--Inicio cabecera-->
+
+<!--Cabecera-->
+<head>
 
   <title>Spring Books</title> <!--Titulo de la pagina-->
- <link rel = "icon" href ="img/icono.png" type = "image/x-icon"> 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel = "icon" href ="img/icono.png" type = "image/x-icon"> <!--icono-->
+  <meta charset="utf-8"> <!--Caracteres del documento-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Compatibilidad con tamaños de pantalla-->
+  <meta name="description" content="Spring Books es una libreria gratuita"> <!--Descripcion del documento-->
+
+  <!--Dependencias-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--link de la dependencia de bootstap para estilos-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--link de la dependencia de jquery para unos estilos-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para animaciones-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Lato-->
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Satis-->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--Link de fontAwesome que nos servira para unos iconos como los de las redes sociales-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Link de dependencia con ajax para animaciones con awesome-->
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--link de la dependencia de jquery para unos estilos-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!--Link de un popper con ajax-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para animaciones-->
-    <link rel="stylesheet" href="css/styles.css"> <!--link de la hoja de estilos para esta pagina-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para animaciones (Este nos servira para que se mueva el carrusel)-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Lato-->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Satis para el carrusel-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--Link de fontAwesome que nos servira para unos iconos como los de las redes sociales-->
+  <link rel="stylesheet" href="css/styles.css"> <!--link de la hoja de estilos para esta pagina-->
+
 </head>
-    
+
+    <!--Cuerpo del documento-->
     <body>
-        <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <div class="navbar-header">
+        <nav class="navbar navbar-expand-lg"> <!--Opciones de la barra de navegacion-->
+  <div class="container-fluid"> <!--Contenedor de la cabecera donde va el logo Inicio y contactanos de ancho completo-->
+    <div class="navbar-header"> 
       
-      <a class="navbar-brand" href=""><img src="img/logo.gif" height="142" width="143"
-          /></a>
-        <button type="button" class="navbar-toggle ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
-      </button>
+      <a class="navbar-brand" href="login.html"><img src="img/logo.gif" height="120" width="78"
+          /></a> <!--barra de navegacion donde se encuentra el logo de la marca, información acerca de la marca de la pagina (no implementado)-->
+
     </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--Barra de navegacion contenida a un lado-->
+      <ul class="nav navbar-nav navbar-right"> <!--Lista de los elementos que estan a un lado de la barra de navegacion-->
           
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Contactanos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li> <!--Boton de inicio-->
+          <li class="nav-item"><a class="nav-link" href="">Contactanos</a></li> <!--Boton de contactanos-->
+          <li class="nav-item"><a class="nav-link" href="login.html">Inicia Sesión</a></li><!--Inicio de sesion-->
       </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--Barra de navegacion contenida a un lado-->
+        <ul class="nav navbar-nav navbar-right"> <!--Lista de los elementos que estan a un lado de la barra de navegacion-->
+            
+        </ul>
+      </div>
+
     </div>
   </div>
 </nav>
 
-        <!--Barra de navegación-->
-<div style="background-color: black; height: 50px; width: 100%;"></div>
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
- <!-- Indicadores -->
+        <!--Barras negras del carrusel-->
+<div style="background-color: black; height: 50px; width: 100%;"></div> <!--Barra negra de arriba del carrusel-->
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel"> 
+ 
+  <!-- Indicadores el carrusel -->
   <ol class="carousel-indicators">
     <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#bs-carousel" data-slide-to="1"></li>
     <li data-target="#bs-carousel" data-slide-to="2"></li>
   </ol>
   
-  <!-- Paginas -->
-  <div class="carousel-inner">
-    <div class="item slides active">
+
+  
+  <!-- Paginas del carrusel-->
+  <div class="carousel-inner"> <!--Carrusel 1-->
+    <div class="item slides active"> 
       <div class="slide-1"></div>
-      <div class="hero">
+      <div class="hero"> <!--Imagen con estilo hero-->
         <hgroup>
-            <h1>Los mejores libros</h1>        
-            <h2 id="hero1">Para tus estudios</h2>
+            <h1>Los mejores libros</h1> <!--Titulo de la imagen 1-->     
+            <h2 id="hero1">Para tus estudios</h2> <!--subtitulo de la imagen 1 -->
         </hgroup>
       </div>
     </div>
-    <div class="item slides">
+    <div class="item slides"> <!--Carrusel 2-->
       <div class="slide-2"></div>
-      <div class="hero">        
+      <div class="hero"> <!--Imagen con estilo hero-->
         <hgroup>
-            <h1>Libros gratis para todos</h1>        
-            <h2 id="hero1">Publicamos nuevos cada semana</h2>
+            <h1>Libros gratis para todos</h1>  <!--Titulo de la imagen 2-->     
+            <h2 id="hero1">Publicamos nuevos cada semana</h2> <!--subtitulo de la imagen 2 -->
         </hgroup>       
       </div>
     </div>
-    <div class="item slides">
+    <div class="item slides"> <!--Carrusel 3-->
       <div class="slide-3"></div>
-      <div class="hero">        
+      <div class="hero"> <!--Imagen con estilo hero-->       
         <hgroup>
-            <h1>Busca el libro que deseas.</h1>        
-            <h2 id="hero1">No te preocupes por el pago.</h2>
+            <h1>Busca el libro que deseas.</h1>  <!--Titulo de la imagen 3-->      
+            <h2 id="hero1">No te preocupes por el pago.</h2> <!--subtitulo de la imagen 3-->
         </hgroup>
       </div>
     </div>
   </div> 
 </div>
-<div style="background-color: black; height: 50px; width: 100%;"></div>
+
+<!--Barra de busqueda-->
+<div style="background-color: black; height: 50px; width: 100%;"></div> <!--Barra negra de abajo del carrusel-->
         
-        <h3 id="all_books">Todos los libros</h3>
+        <h3 id="all_books">Todos los libros</h3> <!--Categoria-->
         <br>
-                <form style="float:none;" class="example">
-                    <input type="text" placeholder="Buscar el nombre del autor" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                <form style="float:none;" class="example"> <!--Formulario de busqueda-->
+                    <input type="text" placeholder="Buscar el nombre del autor" name="search"> 
+                    <button type="submit"><i class="fa fa-search"></i></button> <!--Icono de busqueda de fontAwesome-->
                 </form>
         <br>
 
         <!--Libros-->
-          <div class="row">
-  <div class="column">
+          <div class="row"> <!--Divisores de columnas de los libros-->
+  <div class="column"> <!--Divisor de columna 1-->
       <a href="books.html">
-    <div class="card">
+    <div class="card"> 
         <img src="img/Habitos.jpg" class="img-responsive" height="200" width="200">
       <h3>Los 7 hábitos de la gente altamente efectiva</h3>
       <p>Stephen R. Covey</p>
@@ -106,7 +118,7 @@
       </a>
   </div>
 
-  <div class="column">
+  <div class="column"> <!--Divisor de columna 2-->
       <a href="book.html">
     <div class="card">
         <img src="img/Filosofia.jpg" class="img-responsive" height="200" width="200">
@@ -118,7 +130,7 @@
           </a>
   </div>
   
-  <div class="column">
+  <div class="column"> <!--Divisor de columna 3-->
       <a href="book.html">
     <div class="card">
         <img src="img/Fisica.jpg" class="img-responsive" height="200" width="200">
@@ -130,7 +142,7 @@
       </a>
   </div>
   
-  <div class="column">
+  <div class="column"> <!--Divisor de columna 4-->
       <a href="book.html">
     <div class="card">
         <img src="img/Calculo.jpg" class="img-responsive" height="200" width="200">
@@ -141,7 +153,8 @@
     </div>
       </a>
   </div>
-    <div class="column">
+
+    <div class="column"> <!--Divisor de columna 5-->
         <a href="book.html">
     <div class="card">
         <img src="img/Programacion web.jpg" class="img-responsive" height="200" width="200">
