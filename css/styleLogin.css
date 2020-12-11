@@ -42,45 +42,45 @@ left: calc(50% - 50px); /*Posicion de logo*/
 .login-box h1 { /*Titulo de la tarjeta*/
 margin: 10px; /*Margen*/
 padding: 0 0 20px; /*Relelno*/
-text-align: center; /*alineacion de texto*/
-font-size: 22px; /*tamaño fuente*/
+text-align: center; /*Alineacion de texto*/
+font-size: 22px; /*Tamaño fuente*/
 }
 
 .login-box label{ /*Texto del formulario*/
-margin: 0; /*margen*/
-padding: 0; /*relleno*/
-font-weight: bold; /*ancho y estilo fuente*/
-display: block; /*elemento en forma de cuadro*/
+margin: 0; /*Margen*/
+padding: 0; /*Relleno*/
+font-weight: bold; /*Ancho y estilo fuente*/
+display: block; /*Elemento en forma de cuadro*/
 }
 
 .login-box input{ /*Formulario*/
-width: 100%; /*anchura*/
-margin-bottom: 20px; /*margen Fondo*/
-border: none; /*sin borde*/
-border-bottom: 1px solid #fff; /*borde de abajo*/
+width: 100%; /*Anchura*/
+margin-bottom: 20px; /*Margen Fondo*/
+border: none; /*Sin borde*/
+border-bottom: 1px solid #fff; /*Borde de abajo*/
 background: transparent; /*Fondo*/
-outline: none; /*sin linea*/
-height: 40px; /*altura*/
-color: #fff; /*color*/
-font-size: 16px;  /*tamaño fuente*/
+outline: none; /*Sin linea*/
+height: 40px; /*Altura*/
+color: #fff; /*Color*/
+font-size: 16px;  /*Tamaño fuente*/
 }
 
-.login-box input[type="submit"]{ /*boton formulario*/
-border: none; /*sin borde*/
+.login-box input[type="submit"]{ /*Boton formulario*/
+border: none; /*Sin borde*/
 background: #f0c351; /*Fondo*/
-font-size: 18px; /*tamaño fuente*/
-border-radius: 20px; /*borde redondeado*/
+font-size: 18px; /*Tamaño fuente*/
+border-radius: 20px; /*Borde redondeado*/
 }
 
-.login-box a{ /*texto*/
-    text-decoration: none; /*sin decoracion*/
-    font-size: 18px; /*tamaño*/
-    line-height: 18px; /*altura linea*/
-    color: darkgray; /*color*/
+.login-box a{ /*Texto*/
+    text-decoration: none; /*Sin decoracion*/
+    font-size: 18px; /*Tamaño*/
+    line-height: 18px; /*Altura linea*/
+    color: darkgray; /*Color*/
 }
 
-.login-box a:hover{ /*color al pasar cursor en texto abajo*/
-    color:#fff /*color*/
+.login-box a:hover{ /*Color al pasar cursor en texto abajo*/
+    color:#fff /*Color*/
 }
 /****************************************************************/
 /****************************************************************/

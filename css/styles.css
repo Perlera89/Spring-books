@@ -2,13 +2,13 @@
 /*Barra de navegación*/
 /********************************************************/
 .navbar { 
-    padding-left: 0%; /*relleno izquierdo*/
-    padding-right: 0%; /*relleno derecho*/
-    background-color: transparent; /*fondo*/
+    padding-left: 0%; /*Relleno izquierdo*/
+    padding-right: 0%; /*Relleno derecho*/
+    background-color: transparent; /*Fondo*/
   }
   
   .navbar-right { /*Barra iquierda*/
-    padding-top: 4.5%; /*rellleno arriba*/
+    padding-top: 4.5%; /*Rellleno arriba*/
   }
   
   /********************************************************/
@@ -27,8 +27,8 @@
   /*Categoria de libros*/
   /********************************************************/
   #all_books {
-    padding-left: 11%; /*relleno izquierdo*/ 
-    padding-right: 10%; /*relleno derecho*/
+    padding-left: 11%; /*Relleno izquierdo*/ 
+    padding-right: 10%; /*Relleno derecho*/
   }
   
   /********************************************************/
@@ -83,7 +83,7 @@
   
   .hero h1 { /*Estilo del titulo de las imagenes del carrusel*/
     font-size: 6em; /*Tamaño*/
-    font-weight: bold; /*Estilo fuent4e*/
+    font-weight: bold; /*Estilo fuente*/
     margin: 0; /*Margen*/
     padding: 0; /*Relleno*/
   }
@@ -130,12 +130,12 @@
   /*barra de navegacion*/
   /********************************************************/
   .example { /*barra*/
-    margin-left: 10.5%; /*margen izquierdo*/
-    margin-right: 10.5%; /*margen derechio*/
+    margin-left: 10.5%; /*Margen izquierdo*/
+    margin-right: 10.5%; /*Margen derechio*/
   }
   
-  form.example input[type=text] { /*formulario de barra*/
-    padding: 10px; /*relleno*/
+  form.example input[type=text] { /*Formulario de barra*/
+    padding: 10px; /*Relleno*/
     font-size: 17px; /*Tamaño fuente*/
     border: 1px solid grey; /*Borde*/
     float: left; /*Ubicador izquiedo*/
@@ -147,50 +147,50 @@
   form.example button { /*Boton de bsucar*/
     float: left; /*Ubicador izquiedo*/
     width: 20%; /*Anchura*/
-    padding: 10px; /*relleno*/
+    padding: 10px; /*Relleno*/
     background: black; /*Fondo*/
     color: white; /*color*/
     font-size: 17px; /*tamaño de fuent4e*/
-    border: 1px solid grey; /*borde, grosor y color*/
+    border: 1px solid grey; /*Borde, grosor y color*/
     border-left: none; /*Sin borde izquierdo*/
     cursor: pointer; /*Cursor en forma de puntero*/
   }
   
-  form.example button:hover { /*lupa*/
-    background: grey; /*color lupa*/
+  form.example button:hover { /*Lupa*/
+    background: grey; /*Color de la lupa*/
   }
   
   form.example::after { /*divisor con libros*/
     content: ""; /*generador de contenido*/
-    clear: both; /*movido hacia abajo*/
-    display: table; /*elemento como taqbla*/
+    clear: both; /*Movido hacia abajo*/
+    display: table; /*Elemento como taqbla*/
   }
   /********************************************************/
   /*diseño libros*/
   /********************************************************/
   #container { /*Separador*/
-    padding: 2px 16px; /*relleno*/
+    padding: 2px 16px; /*Relleno*/
   }
 
   
   #column { /*Columna de informacion*/
-    text-align: center; /*alineacion central*/
-    padding: 10px; /*relleno*/
-    color: lightgrey; /*color*/
-    text-decoration: none; /*estilo de texto*/
-    font-size: 18px; /*tamaño de fuente*/
-    font-family: 'Lato'; /*familia de fuent4e*/
+    text-align: center; /*Alineacion central*/
+    padding: 10px; /*Relleno*/
+    color: lightgrey; /*Color*/
+    text-decoration: none; /*Estilo de texto*/
+    font-size: 18px; /*Tamaño de fuente*/
+    font-family: 'Lato'; /*Familia de fuent4e*/
     font-weight: 600; /*Altura de fuente*/
   
   }
   
   #column1 { /*fColumna de derechos de autor*/
-    text-align: center; /*alineacion central*/
-    padding: 10px; /*relleno*/
-    color: darkgrey; /*color*/
-    text-decoration: none; /*estilo de texto*/
-    font-size: 18px; /*tamaño de fuente*/
-    font-family: 'Lato'; /*familia de fuent4e*/
+    text-align: center; /*Alineacion central*/
+    padding: 10px; /*Relleno*/
+    color: darkgrey; /*Color*/
+    text-decoration: none; /*Estilo de texto*/
+    font-size: 18px; /*Tamaño de fuente*/
+    font-family: 'Lato'; /*Familia de fuent4e*/
   
   }
   
@@ -198,43 +198,43 @@
   .column { /*Columnas de los libros*/
     float: left; /*Ubicador izquiedo*/
     width: 20%; /*Altura*/
-    padding: 0 10px; /*relleno*/
-    margin-bottom: 3%; /*margen abajo*/
+    padding: 0 10px; /*Relleno*/
+    margin-bottom: 3%; /*Margen abajo*/
   }
   
   
-  .row { /*margenes*/
-    margin-right: 10%; /*margen derecho*/
-    margin-left: 10%; /*margen izquierdo*/
+  .row { /*Nargenes*/
+    margin-right: 10%; /*Margen derecho*/
+    margin-left: 10%; /*Margen izquierdo*/
   }
   
-  .row:after { /*margen*/
-    content: ""; /*generador de contenido*/
-    display: table; /*elemento como tabla*/
-    clear: both; /*movido hacia abajo*/
+  .row:after { /*Margen*/
+    content: ""; /*Generador de contenido*/
+    display: table; /*Elemento como tabla*/
+    clear: both; /*Movido hacia abajo*/
   }
   
   .card { /*Estilos de tarjetas*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Sombra de tarjeta*/
-    padding: 15px; /*relleno de borde*/
-    text-align: center; /*aliniaccion central*/
-    background-color: #f1f1f1; /*fondo*/
-    transition: transform 0.3s; /*tiempo de transicion*/
+    padding: 15px; /*Relleno de borde*/
+    text-align: center; /*Aliniaccion central*/
+    background-color: #f1f1f1; /*Fondo*/
+    transition: transform 0.3s; /*Tiempo de transicion*/
   }
   
-  .card:hover { /*movimiento de tarjeta*/
-    transform: translateY(-10px); /*movimiento de transicion*/
+  .card:hover { /*Movimiento de tarjeta*/
+    transform: translateY(-10px); /*Movimiento de transicion*/
   }
   
   /********************************************************/
   /*diseño de texto las tarjetas */
   /********************************************************/
-  h3 { /*titulo tarjeta*/
-    text-align: left; /*aliniacion izquierda*/
+  h3 { /*Titulo tarjeta*/
+    text-align: left; /*Aliniacion izquierda*/
   }
   
   p { /*descripcion*/
-    text-align: left; /*aliniacion izquierda*/
+    text-align: left; /*Aliniacion izquierda*/
   }
   
   a { /*Color titulo*/
@@ -242,59 +242,59 @@
     color: black; /*color*/
   }
   
-  a:hover { /*en movimiento*/
+  a:hover { /*En movimiento*/
     text-decoration: none; /*sin decoracion*/
     color: black; /*color*/
   }
   
   /********************************************************/
-  /* iconos de redes sociales        */
+  /* Iconos de redes sociales        */
   /********************************************************/
   
-  #media_spacing { /*espacio*/
-    margin-right: 3%; /*margen derecho*/
+  #media_spacing { /*Espacio*/
+    margin-right: 3%; /*Margen derecho*/
   }
   
   #media_icons { 
-    display: flex; /*elemento de bloque especificado*/
-    text-align: center; /*alineado de texto al centro*/
-    align-items: center; /*alineado de items al centro*/
-    justify-content: center; /*items justificado al centro*/
-    background: #000000; /*fondo*/
+    display: flex; /*Elemento de bloque especificado*/
+    text-align: center; /*Alineado de texto al centro*/
+    align-items: center; /*Alineado de items al centro*/
+    justify-content: center; /*Items justificado al centro*/
+    background: #000000; /*Fondo*/
   }
   
   #media_icons #media_list { /*Presentacion de iconos*/
-    position: relative; /*posicion*/
-    display: block; /*elemento de bloque cuadro*/
-    color: #666; /*color*/
-    font-size: 30px; /*tamaño de fuente*/
-    height: 60px; /*altura*/
-    width: 60px; /*grosor*/
-    background: #171515; /*fondo*/
-    line-height: 60px; /*altura de icono*/
-    border-radius: 50%; /*borde de items*/
-    margin: 0 15px; /*margen*/
-    cursor: pointer; /*cursor de forma puntero*/
-    transition: 0.5s; /*transicion*/
+    position: relative; /*Posicion*/
+    display: block; /*Elemento de bloque cuadro*/
+    color: #666; /*Color*/
+    font-size: 30px; /*Tamaño de fuente*/
+    height: 60px; /*Altura*/
+    width: 60px; /*Grosor*/
+    background: #171515; /*Fondo*/
+    line-height: 60px; /*Altura de icono*/
+    border-radius: 50%; /*Borde de items*/
+    margin: 0 15px; /*Margen*/
+    cursor: pointer; /*Cursor de forma puntero*/
+    transition: 0.5s; /*Transicion*/
   }
   
-  #media_icons #media_list:before { /*items al pasar el cursor*/
-    position: absolute; /*posicion*/
-    content: ""; /*generador de contenido*/
-    top: 0; /*abajo*/
-    left: 0; /*iaquierda*/
-    background-color: #d35400; /*fondo*/
-    height: 100%; /*altura*/
-    width: 100%; /*anchura*/
-    border-radius: 50%; /*bordes redondeados de items*/
-    z-index: -10; /*transicion al frente*/
-    transform: scale(0.9); /*escala de movimiento*/
-    transition: 0.5s; /*tiempo*/
+  #media_icons #media_list:before { /*Items al pasar el cursor*/
+    position: absolute; /*Posicion*/
+    content: ""; /*Generador de contenido*/
+    top: 0; /*Abajo*/
+    left: 0; /*Iaquierda*/
+    background-color: #d35400; /*Fondo*/
+    height: 100%; /*Altura*/
+    width: 100%; /*Anchura*/
+    border-radius: 50%; /*Bordes redondeados de items*/
+    z-index: -10; /*Transicion al frente*/
+    transform: scale(0.9); /*Escala de movimiento*/
+    transition: 0.5s; /*Tiempo*/
   }
   
   #media_icons #media_list:nth-child(1):hover { /*Color al pasar cursor*/
     color: #456cba; /*Color*/
-    box-shadow: 0 0 15px #4267b2; /*sombra de caja*/
+    box-shadow: 0 0 15px #4267b2; /*Sombra de caja*/
     text-shadow: 0 0 15px #4267b2; /*Sombra de t4exto*/
   }
 
