@@ -1,44 +1,44 @@
 /*************************************************************************************************/
 /*   Texto   */
 /*************************************************************************************************/
-.fuente-raleway{ /*fuente*/
+.fuente-raleway{ /*Fuente*/
   font-family: "Raleway", arial;
 }
-.EstiloTexto{ /*estilo fuente de informacion fuente*/
+.EstiloTexto{ /*Estilo fuente de informacion fuente*/
   color: white;
   font-size:25px;
   text-shadow: 2px 2px 4px #000000;
   }
-  .conEspaciado{ /*espaciado*/
+  .conEspaciado{ /*Espaciado*/
     line-height: 3vh;
 }
-.text-center{ /*texto centrado*/
+.text-center{ /*Texto centrado*/
   text-align: center;
 }
 
 /*************************************************************************************************/
 /*   Tarjeta de informacion   */
 /*************************************************************************************************/
-.BackgroundText{ /*caja de fondo de arriba*/
+.BackgroundText{ /*Caja de fondo de arriba*/
   background-color: #d2d2d294; /*Color*/
-  box-shadow: 1px 1px 1px 10px #111010; /*contorno de la caja*/
-  border-radius: 10px; /*borde redondeado*/  
-  margin: 8vh 14.2vh 1vh 14.2vh; /*margen*/
-  padding: 9vh; /*relleno*/
+  box-shadow: 1px 1px 1px 10px #111010; /*Contorno de la caja*/
+  border-radius: 10px; /*Borde redondeado*/  
+  margin: 8vh 14.2vh 1vh 14.2vh; /*Margen*/
+  padding: 9vh; /*Relleno*/
 }
 
-  .TextBack{ /*texto de salida*/
+  .TextBack{ /*Texto de salida*/
   width:100%;
   color:rgb(255, 255, 255);
   font-size: 30px;
   }
 
   
-  *, *:before, *:after { /*estilo texto de salida*/
-    box-sizing: inherit; /*ajustar forma de la caja*/
+  *, *:before, *:after { /*Estilo texto de salida*/
+    box-sizing: inherit; /*Ajustar forma de la caja*/
   }
 
-  a:link{ /*sin decoracion*/
+  a:link{ /*Sin decoracion*/
     text-decoration:none;
 }
   
@@ -58,75 +58,75 @@
 /*   Division de redes sociales   */
 /***************************************************************************************************/
   .soc { /*Cuadro de iconos*/
-    display: block; /*elemento en forma de cuadro*/
-    margin: 0 auto; /*margen*/
-    padding: 48px 4.8rem; /*relleno*/
-    text-align: center; /*alineacion de iconos al centro*/
-    width: 110rem 100%; /*anchura*/
+    display: block; /*Elemento en forma de cuadro*/
+    margin: 0 auto; /*Margen*/
+    padding: 48px 4.8rem; /*Relleno*/
+    text-align: center; /*Alineacion de iconos al centro*/
+    width: 110rem 100%; /*Anchura*/
   }
 
-  .soc li { /*forma de la lista de iconos*/
-    display: inline-block; /*elemento en forma de cuadros en linea*/
+  .soc li { /*Forma de la lista de iconos*/
+    display: inline-block; /*Elemento en forma de cuadros en linea*/
     margin: 12px 1.2rem; /*Margen*/
   }
 
-  .soc a, .soc svg { /*forma de la lista de iconos*/
-    display: block; /*elemento en forma de cuadro*/
+  .soc a, .soc svg { /*Forma de la lista de iconos*/
+    display: block; /*Elemento en forma de cuadro*/
   }
 
-  .soc a { /*forma de la lista de iconos*/
-    position: relative; /*posicion*/
-    height: 96px; /*altura*/
-    height: 9.6rem; /*altura*/
-    width: 96px; /*anchura*/
-    width: 9.6rem; /*anchura*/
+  .soc a { /*Forma de la lista de iconos*/
+    position: relative; /*Posicion*/
+    height: 96px; /*Altura*/
+    height: 9.6rem; /*Altura*/
+    width: 96px; /*Anchura*/
+    width: 9.6rem; /*Anchura*/
   }
   
 /*************************************************************************************************/
 /*   Iconos de redes sociales   */
 /***************************************************************************************************/
    .icon-1:hover, .icon-2:hover, .icon-3:hover,  .icon-4:hover { /*Animacion al pasar cursor en los iconos*/
-    border-radius: 100%; /*borde redondeado*/
-    color: #0e1a25; /*color */
-    fill: #0e1a25; /*pinta el intrior del icono*/
-    -webkit-transform: scale(1.25); /*anchura*/
-    transform: scale(1.25); /*esala de transformacion*/
-    transition: background-color 0.5s, transform 0.5s ease-out; /*animacion al pasar cursor en los iconos*/
+    border-radius: 100%; /*Borde redondeado*/
+    color: #0e1a25; /*Color */
+    fill: #0e1a25; /*Pinta el intrior del icono*/
+    -webkit-transform: scale(1.25); /*Anchura*/
+    transform: scale(1.25); /*Esala de transformacion*/
+    transition: background-color 0.5s, transform 0.5s ease-out; /*Animacion al pasar cursor en los iconos*/
   }
 
-  .icon-1 { /*color de de icono email*/
+  .icon-1 { /*Color de de icono email*/
     color: #00690e;
     fill: #00690e;
   }
 
-  .icon-1:hover { /*color de animacion al pasar cursor al icono email*/
+  .icon-1:hover { /*Color de animacion al pasar cursor al icono email*/
     background: #00690e;
   } 
 
-  .icon-2 { /*color de de icono instagran*/
+  .icon-2 { /*Color de de icono instagran*/
     color: #e913d7;
     fill: #e913d7;
   }
 
-  .icon-2:hover { /*color de animacion al pasar cursor al icono instagran*/
+  .icon-2:hover { /*Color de animacion al pasar cursor al icono instagran*/
     background: #e913d7;
   }
  
-  .icon-3 { /*color de de icono twiter*/
+  .icon-3 { /*Color de de icono twiter*/
     color: #007df1;
     fill: #007df1;
   }
 
-  .icon-3:hover { /*color de animacion al pasar cursor al icono twitter*/
+  .icon-3:hover { /*Color de animacion al pasar cursor al icono twitter*/
     background: #007df1;
   }
 
-  .icon-4 { /*color de de icono youtube*/
+  .icon-4 { /*Color de de icono youtube*/
     color: #f70101;
     fill: #f70101;
   }
 
-  .icon-4:hover { /*color de animacion al pasar cursor al icono youtube*/
+  .icon-4:hover { /*Color de animacion al pasar cursor al icono youtube*/
     background: #f70101;
   }
 /*************************************************************************************************/
