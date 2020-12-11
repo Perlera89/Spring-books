@@ -1,41 +1,53 @@
-#section
+/******************************************/
+/*Margenes de la informacion*/
+/******************************************/
+#section /*margenes de la imagen del libro*/
 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#sectionone
+
+#sectionone /*Margenes de la descripcion*/
 {
     margin-top: 5%;
     margin-bottom: 5%;
     padding-left: 5%;
 }
-#form
+
+
+#form /*Margenes de la reseña*/
 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-body
+
+body /*Fuente del texto*/
 {
     font-family: 'Lato'
 }
 
-
-h3
+/******************************************/
+/*Texto de la informacion*/
+/******************************************/
+h3 /*Autor*/
 {
     font-weight: 700;
 }
 
-h4
+
+h4 /*Titulo*/
 {
     font-weight:bold;
 }
+
 
 b
 {
     color: maroon;
 }
+
 
 p
 {
@@ -43,7 +55,10 @@ p
     font-size: 15px;
 }
 
-#download
+/******************************************/
+/*Botones*/
+/******************************************/
+#download /*Boton de descarga*/
 {
     background-color: #f0c351;
     padding-left: 4%;
@@ -57,7 +72,7 @@ p
     border: none;
 }
 
-#back
+#back /*Boton de regreso*/
 {
     background-color: darkgrey;
     padding-left: 4%;
@@ -71,7 +86,7 @@ p
     border: none;
 }
 
-#more-info
+#more-info /*Boton mas informacion*/
 {
     background-color: #f0c351;
     padding-left: 4%;
@@ -84,3 +99,4 @@ p
     font-size: 10px;
     border: none;
 }
+/******************************************/
