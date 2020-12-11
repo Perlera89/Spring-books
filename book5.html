@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang="es"> <!--Estructura principal e Idioma del documento-->
+
+  <head> <!--Inicio cabecera-->
+    <title>Información</title> <!--Titulo de la pagina-->
+    <link rel="icon" href="img/icono.png" type="image/x-icon" /> <!--Icono del documento-->
+    <meta charset="utf-8" /> <!--Caracteres del documento-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--Compatibilidad con tamaños de pantalla-->
+    <meta name="description" content="Spring Books es una libreria gratuita"> <!--Descripcion del documento-->
+
+  <!--Dependencias-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--link de la dependencia de bootstap para estilos-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--link de la dependencia de jquery para unos estilos-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para animaciones (Este nos servira para que se mueva el carrusel)-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Lato-->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Satis para el carrusel-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--Link de fontAwesome que nos servira para unos iconos como los de las redes sociales-->
+  <link rel="stylesheet" href="css/styles.css"> <!--link de la hoja de estilos para esta pagina-->
+  <link rel="stylesheet" href="css/styles1.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg"> <!--Division de la barra de navegación-->
+      <div class="container-fluid">
+        <div class="navbar-header"> <!--Donde esta el logo-->
+          <a class="navbar-brand" href="" 
+            ><img src="img/logo.gif" height="120" width="78" 
+          /></a> <!--Propiedades del logo-->
+        
+        <!--Barra de navegacion-->
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contactanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Inicia sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Tarjeta del libro-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" id="section">
+          <img
+            src="img/Programacion web.jpg"
+            class="img-responsive"
+          />
+        </div>
+
+        <!--Informacion del libro-->
+        <div id="sectionone">
+          <h3>El gran libro de HTML5, CSS3 y JavaScript</h3>
+          <h4>J.D. Gauchad</h4>
+          <p>Precio de compra: <strike> $ 7.59</strike></p>
+          <p>Nuestro precio: <b>Gratis</b></p>
+          <p>Edición N° 3 <br></p>
+          <p>2019<br></p>
+          <a href="libros/Programación/Programacion web.pdf"><button type="button" id="download">Descargar</button> </a
+          >&nbsp; &nbsp;
+          <a href="index.html"
+            ><button type="button" id="back">Regresar</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="form">
+          <form>
+            <h3>Reseña del libro:</h3>
+            <br />
+            <p>El gran libro de HTML5, CSS3 y JavaScript guía al lector paso a paso en el desarrollo de sitios y aplicaciones web. 
+                Después de leer este libro sabrá cómo estructurar sus documentos con HTML, cómo otorgarles estilos con CSS y cómo trabajar con las más poderosas APIs de JavaScript. 
+                Este libro es un curso completo que le enseñará cómo construir sitios webs adaptables y aplicaciones revolucionarias desde cero. Cada capítulo explora conceptos básicos y complejos de HTML, CSS y JavaScript. 
+                La información viene acompañada por ejemplos funcionales que guían al recién iniciado y también al programador experto a través de cada etiqueta, estilo y función incluidos en estos lenguajes. 
+                Este libro incluye: Introducción a HTML, CSS y JavaScript | Modelos de Caja Tradicional y Flexible | Diseño Web Adaptable | Vídeo y Audio | API Formularios | API Canvas | API WebGL | API Web Audio | API IndexedDB | API Web Storage | API File | API WebSocket | API WebRTC | API Stream | API Fullscreen | Ajax Level 2 | API Web Workers | API Drag and Drop | API History | API Web Messaging | API Pointer Lock | API Geolocation | API Page Visibility | API TextTrack y más.<br><br></p>
+            <a href="https://www.amazon.es/gran-libro-HTML5-JavaScript-Edici%C3%B3n/dp/8426724639"><button type="button" id="more-info">Obtener mas Información</button> </a
+              >&nbsp; &nbsp;
+          <em></em>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!--Pie de pagina-->
+    <div class="footer" style="background-color: black"> <!--Color de pie de pagina-->
+      <div class="container"></div><!--Contendor de informacion-->
+        <div class="row" id="column">
+          <a id="column">Siguenos</a> <a id="column">Contactanos</a> <!--Informacion de las redes-->
+        </div>
+        <div id="media_spacing"> <!--Espacio de iconos-->
+          <ul id="media_icons"> <!--Presentacion de iconos-->
+            <a id="links" href="https://www.facebook.com/jenny.tejada.33821"
+              ><li id="media_list"><i class="fab fa-facebook"></i></li> <!--Etiqueta de enlace a facebook usando un icono de fontAwesome-->
+            </a>
+            <a id="links" href="https://instagram.com/__peke.___?igshid=16h4lxpdgxuja"
+              ><li id="media_list"><i class="fab fa-instagram"></i></li> <!--Etiqueta de enlace a instagram usando un icono de fontAwesome-->
+            </a>
+            <a id="links" href="https://www.linkedin.com/in/rigoberto-mendez-893a631b3/"
+              ><li id="media_list"><i class="fab fa-linkedin-in"></i></li> <!--Etiqueta de enlace a linkedin usando un icono de fontAwesome-->
+            </a>
+          </ul>
+        </div>
+
+        <div class="row" id="column1">© Derechos Reservados Spring-Boooks-2020</div> <!--Derechos de autor-->
+      </div>
+    </div>
+    <script src="js/pop-up.js" type="text/javascript"></script> <!--ventana emergente-->
+    
+  </body>
+</html>

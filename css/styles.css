@@ -2,13 +2,13 @@
 /*Barra de navegación*/
 /********************************************************/
 .navbar { 
-    padding-left: 0%;
-    padding-right: 10%;
-    background-color: transparent;
+    padding-left: 0%; /*relleno izquierdo*/
+    padding-right: 0%; /*relleno derecho*/
+    background-color: transparent; /*fondo*/
   }
   
-  .navbar-right {
-    padding-top: 7%;
+  .navbar-right { /*Barra iquierda*/
+    padding-top: 4.5%; /*rellleno arriba*/
   }
   
   /********************************************************/
@@ -19,14 +19,7 @@
     color: black; /*Color*/
     text-decoration: none; /*Formato del texto*/
     opacity: 1; /*opacidad*/
-    font-size: 1.7rem; /*Tamaño*/
-  
-  }
-  
-  .nav-item .nav-link:hover {
-    color: black; /*Color*/
-    background-color: transparent; /*Color de fondo*/
-    font-weight: 600; 
+    font-size: 2.0rem; /*Tamaño*/
   
   }
   
@@ -34,87 +27,77 @@
   /*Categoria de libros*/
   /********************************************************/
   #all_books {
-    padding-left: 11%;
-    padding-right: 10%;
+    padding-left: 11%; /*relleno izquierdo*/ 
+    padding-right: 10%; /*relleno derecho*/
   }
   
   /********************************************************/
   /*Carrusel*/
   /********************************************************/
-  .fade-carousel {
-    position: relative;
-    height: 70vh;
+  .fade-carousel { /*Imagenes*/
+    position: relative; /*Posicion*/
+    height: 70vh; /*Altura*/
   }
   
-  .fade-carousel .carousel-inner .item {
-    height: 70vh;
+  .fade-carousel .carousel-inner .item {  /*Imagenes*/
+    height: 70vh; /*Altura*/
   }
   
-  .fade-carousel .carousel-indicators>li {
-    margin: 0 2px;
-    background-color: white;
-    border-color: black;
-    opacity: .7;
+  .fade-carousel .carousel-indicators>li { /*Indicadores*/
+    margin: 0 2px; /*Margen*/
+    background-color: white; /*Color centro*/
+    border-color: black; /*Color contorno*/
+    opacity: 7; /*Opacidad*/
   }
   
-  .fade-carousel .carousel-indicators>li.active {
-    width: 10px;
-    height: 10px;
-    opacity: 1;
+  .fade-carousel .carousel-indicators>li.active { /*Indicador activo*/
+    width: 10px; /*Ancho*/
+    height: 10px; /*Altura*/
+    opacity: 1; /*Opacidad*/
   }
   
   /********************************************************/
   /*Cabeceras de texto del carrusel*/
   /********************************************************/
-  #hero1 {
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: white;
-    font-family: 'Lato';
-    font-size: 40px;
+  #hero1 { /*Subtitulos del carrusel*/
+    -webkit-text-stroke: 1px black; /*Estilo gradiante*/
+    -webkit-text-fill-color: white; /*Estilo gradiante*/
+    font-family: 'Lato'; /*Fuente*/
+    font-size: 40px; /*Tamaño*/
   }
   
-  .hero { /*Estilo de las imagenes del carrusel*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  .hero { /*Texto del carrusel*/
+    position: absolute; /*Posicion*/
+    top: 50%; /*Posicion altura*/
+    left: 50%; /*Posicion izquierda*/
     z-index: 3; /*Estilo de orden de un posicionamiento y sus descendientes */
-    color: #fff;
+    color: #fff; /*Color*/
     -webkit-text-stroke: .5px black; /*Estilo gradiante*/
     -webkit-text-fill-color: white; /*Estilo gradiante*/
     text-align: center; /*Aliniacion*/
     text-transform: uppercase; /*Cambio de minusculas a mayusculas*/
     font-family: 'Lato'; /*Fuente*/
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    -ms-transform: translate3d(-50%, -50%, 0);
-    -o-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .75); /*Color sombra*/
+    transform: translate3d(-50%, -50%, 0); /*Posicion centrada*/
   }
   
   .hero h1 { /*Estilo del titulo de las imagenes del carrusel*/
-    font-size: 6em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+    font-size: 6em; /*Tamaño*/
+    font-weight: bold; /*Estilo fuent4e*/
+    margin: 0; /*Margen*/
+    padding: 0; /*Relleno*/
   }
   
-  .fade-carousel .carousel-inner .item .hero {
-    opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-    -moz-transition: 2s all ease-in-out .1s;
-    -ms-transition: 2s all ease-in-out .1s;
-    -o-transition: 2s all ease-in-out .1s;
-    transition: 2s all ease-in-out .1s;
+  .fade-carousel .carousel-inner .item .hero { /*Transicion normal */
+    opacity: 0; /*Opacidad*/
+    -webkit-transition: 1s all ease-in-out .1s; /*Adaptacion de transiones en otros navegadores*/
+    transition: 1s all ease-in-out .1s; /*Tiempo transicion*/
   }
   
-  .fade-carousel .carousel-inner .item.active .hero {
-    opacity: 100%;
-    -webkit-transition: 2s all ease-in-out .1s;
-    -moz-transition: 2s all ease-in-out .1s;
-    -ms-transition: 2s all ease-in-out .1s;
-    -o-transition: 2s all ease-in-out .1s;
-    transition: 2s all ease-in-out .1s;
+  .fade-carousel .carousel-inner .item.active .hero { /*Transicion activa*/
+    opacity: 100%; /*Opacidad de texto*/
+    -webkit-transition: 2s all ease-in-out .1s; /*Adaptacion de transiones en otros navegadores*/
+    transition: 2s all ease-in-out .1s; /*Tiempo mantener transicion*/
   }
   
   /********************************************************/
@@ -122,12 +105,12 @@
   /********************************************************/
   .fade-carousel .slides .slide-1,
   .fade-carousel .slides .slide-2,
-  .fade-carousel .slides .slide-3 {
-    height: 70vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-   opacity: 90%;
+  .fade-carousel .slides .slide-3 { /*imagenes del carrusel*/
+    height: 70vh; /*Altura*/
+    background-size: cover; /*Tamaño*/
+    background-position: center center; /*Posicion de fondo*/
+    background-repeat: no-repeat; /*No repetir fondo*/
+   opacity: 90%; /*Opacidad*/
   }
   
   /*imagenes del carrusel*/
@@ -146,220 +129,173 @@
   /********************************************************/
   /*barra de navegacion*/
   /********************************************************/
-  .example {
-    margin-left: 10.5%;
-    margin-right: 10.5%;
+  .example { /*barra*/
+    margin-left: 10.5%; /*margen izquierdo*/
+    margin-right: 10.5%; /*margen derechio*/
   }
   
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
+  form.example input[type=text] { /*formulario de barra*/
+    padding: 10px; /*relleno*/
+    font-size: 17px; /*Tamaño fuente*/
+    border: 1px solid grey; /*Borde*/
+    float: left; /*Ubicador izquiedo*/
+    width: 80%; /*Anchura*/
+    background: #f1f1f1; /*Fondo*/
   
   }
   
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: black;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+  form.example button { /*Boton de bsucar*/
+    float: left; /*Ubicador izquiedo*/
+    width: 20%; /*Anchura*/
+    padding: 10px; /*relleno*/
+    background: black; /*Fondo*/
+    color: white; /*color*/
+    font-size: 17px; /*tamaño de fuent4e*/
+    border: 1px solid grey; /*borde, grosor y color*/
+    border-left: none; /*Sin borde izquierdo*/
+    cursor: pointer; /*Cursor en forma de puntero*/
   }
   
-  form.example button:hover {
-    background: grey;
+  form.example button:hover { /*lupa*/
+    background: grey; /*color lupa*/
   }
   
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+  form.example::after { /*divisor con libros*/
+    content: ""; /*generador de contenido*/
+    clear: both; /*movido hacia abajo*/
+    display: table; /*elemento como taqbla*/
   }
-  
   /********************************************************/
   /*diseño libros*/
   /********************************************************/
-  #container {
-    padding: 2px 16px;
+  #container { /*Separador*/
+    padding: 2px 16px; /*relleno*/
   }
+
   
-  #style_books {
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 130vh;
-  }
-  
-  #column {
-    text-align: center;
-    padding: 10px;
-    color: lightgrey;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Lato';
-    font-weight: 600;
+  #column { /*Columna de informacion*/
+    text-align: center; /*alineacion central*/
+    padding: 10px; /*relleno*/
+    color: lightgrey; /*color*/
+    text-decoration: none; /*estilo de texto*/
+    font-size: 18px; /*tamaño de fuente*/
+    font-family: 'Lato'; /*familia de fuent4e*/
+    font-weight: 600; /*Altura de fuente*/
   
   }
   
-  #column1 {
-    text-align: center;
-    padding: 10px;
-    color: darkgrey;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Lato';
+  #column1 { /*fColumna de derechos de autor*/
+    text-align: center; /*alineacion central*/
+    padding: 10px; /*relleno*/
+    color: darkgrey; /*color*/
+    text-decoration: none; /*estilo de texto*/
+    font-size: 18px; /*tamaño de fuente*/
+    font-family: 'Lato'; /*familia de fuent4e*/
   
   }
   
   
-  .column {
-    float: left;
-    width: 20%;
-    padding: 0 10px;
-    margin-bottom: 3%;
+  .column { /*Columnas de los libros*/
+    float: left; /*Ubicador izquiedo*/
+    width: 20%; /*Altura*/
+    padding: 0 10px; /*relleno*/
+    margin-bottom: 3%; /*margen abajo*/
   }
   
   
-  .row {
-    margin-right: 10%;
-    margin-left: 10%;
+  .row { /*margenes*/
+    margin-right: 10%; /*margen derecho*/
+    margin-left: 10%; /*margen izquierdo*/
   }
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .row:after { /*margen*/
+    content: ""; /*generador de contenido*/
+    display: table; /*elemento como tabla*/
+    clear: both; /*movido hacia abajo*/
   }
   
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    transition: transform 0.3s;
+  .card { /*Estilos de tarjetas*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Sombra de tarjeta*/
+    padding: 15px; /*relleno de borde*/
+    text-align: center; /*aliniaccion central*/
+    background-color: #f1f1f1; /*fondo*/
+    transition: transform 0.3s; /*tiempo de transicion*/
   }
   
-  .card:hover {
-    transform: translateY(-10px);
+  .card:hover { /*movimiento de tarjeta*/
+    transform: translateY(-10px); /*movimiento de transicion*/
   }
   
   /********************************************************/
-  /*diseño de las tarjetas */
+  /*diseño de texto las tarjetas */
   /********************************************************/
-  h3 {
-    text-align: left;
+  h3 { /*titulo tarjeta*/
+    text-align: left; /*aliniacion izquierda*/
   }
   
-  p {
-    text-align: left;
+  p { /*descripcion*/
+    text-align: left; /*aliniacion izquierda*/
   }
   
-  a {
-    text-decoration: none;
-    color: black;
+  a { /*Color titulo*/
+    text-decoration: none; /*sin decoracion*/
+    color: black; /*color*/
   }
   
-  a:hover {
-    text-decoration: none;
-    color: black;
+  a:hover { /*en movimiento*/
+    text-decoration: none; /*sin decoracion*/
+    color: black; /*color*/
   }
   
   /********************************************************/
   /* iconos de redes sociales        */
   /********************************************************/
   
-  #media_spacing {
-    margin-right: 3%;
+  #media_spacing { /*espacio*/
+    margin-right: 3%; /*margen derecho*/
   }
   
-  #media_icons {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background: #000000;
+  #media_icons { 
+    display: flex; /*elemento de bloque especificado*/
+    text-align: center; /*alineado de texto al centro*/
+    align-items: center; /*alineado de items al centro*/
+    justify-content: center; /*items justificado al centro*/
+    background: #000000; /*fondo*/
   }
   
-  #media_icons #media_list {
-    position: relative;
-    display: block;
-    color: #666;
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
-    background: #171515;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 0 15px;
-    cursor: pointer;
-    transition: 0.5s;
+  #media_icons #media_list { /*Presentacion de iconos*/
+    position: relative; /*posicion*/
+    display: block; /*elemento de bloque cuadro*/
+    color: #666; /*color*/
+    font-size: 30px; /*tamaño de fuente*/
+    height: 60px; /*altura*/
+    width: 60px; /*grosor*/
+    background: #171515; /*fondo*/
+    line-height: 60px; /*altura de icono*/
+    border-radius: 50%; /*borde de items*/
+    margin: 0 15px; /*margen*/
+    cursor: pointer; /*cursor de forma puntero*/
+    transition: 0.5s; /*transicion*/
   }
   
-  #media_icons #media_list:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    /*fondo: #d35400; */
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    z-index: -1;
-    transform: scale(0.9);
-    transition: 0.5s;
+  #media_icons #media_list:before { /*items al pasar el cursor*/
+    position: absolute; /*posicion*/
+    content: ""; /*generador de contenido*/
+    top: 0; /*abajo*/
+    left: 0; /*iaquierda*/
+    background-color: #d35400; /*fondo*/
+    height: 100%; /*altura*/
+    width: 100%; /*anchura*/
+    border-radius: 50%; /*bordes redondeados de items*/
+    z-index: -10; /*transicion al frente*/
+    transform: scale(0.9); /*escala de movimiento*/
+    transition: 0.5s; /*tiempo*/
   }
   
-  #media_icons #media_list:nth-child(1):before {
-    background: #4267b2;
+  #media_icons #media_list:nth-child(1):hover { /*Color al pasar cursor*/
+    color: #456cba; /*Color*/
+    box-shadow: 0 0 15px #4267b2; /*sombra de caja*/
+    text-shadow: 0 0 15px #4267b2; /*Sombra de t4exto*/
   }
-  
-  #media_icons #media_list:nth-child(2):before {
-    background: #993f97;
-  }
-  
-  #media_icons #media_list:nth-child(3):before {
-    background: #2867b2;
-  }
-  
-  #media_icons #media_list:hover:before {
-    filter: blur(3px);
-    transform: scale(1.2);
-    /*sombra de caja: 0 0 15px #d35400; */
-  }
-  
-  #media_icons #media_list:nth-child(1):hover:before {
-    box-shadow: 0 0 15px #4267b2;
-  }
-  
-  #media_icons #media_list:nth-child(2):hover:before {
-    box-shadow: 0 0 15px #993f97;
-  }
-  
-  #media_icons #media_list:nth-child(3):hover:before {
-    box-shadow: 0 0 15px #2867b2;
-  }
-  
-  #media_icons #media_list:nth-child(1):hover {
-    color: #456cba;
-    box-shadow: 0 0 15px #4267b2;
-    text-shadow: 0 0 15px #4267b2;
-  }
-  
-  #media_icons #media_list:nth-child(2):hover {
-    color: #ab467e;
-    box-shadow: 0 0 15px #ab467e;
-    text-shadow: 0 0 15px #ab467e;
-  }
-  
-  #media_icons #media_list:nth-child(3):hover {
-    color: #2a6cbb;
-    box-shadow: 0 0 15px #2867b2;
-    text-shadow: 0 0 15px #2867b2;
-  }
+
   /****************************************************************************/

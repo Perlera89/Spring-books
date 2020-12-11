@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang="es"> <!--Estructura principal e Idioma del documento-->
+
+  <head> <!--Inicio cabecera-->
+    <title>Información</title> <!--Titulo de la pagina-->
+    <link rel="icon" href="img/icono.png" type="image/x-icon" /> <!--Icono del documento-->
+    <meta charset="utf-8" /> <!--Caracteres del documento-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--Compatibilidad con tamaños de pantalla-->
+    <meta name="description" content="Spring Books es una libreria gratuita"> <!--Descripcion del documento-->
+
+  <!--Dependencias-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--link de la dependencia de bootstap para estilos-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--link de la dependencia de jquery para unos estilos-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--link de la dependencia de bootstap para animaciones (Este nos servira para que se mueva el carrusel)-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Lato-->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> <!--APi de google para la fuente de Satis para el carrusel-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!--Link de fontAwesome que nos servira para unos iconos como los de las redes sociales-->
+  <link rel="stylesheet" href="css/styles.css"> <!--link de la hoja de estilos para esta pagina-->
+  <link rel="stylesheet" href="css/styles1.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg"> <!--Division de la barra de navegación-->
+      <div class="container-fluid">
+        <div class="navbar-header"> <!--Donde esta el logo-->
+          <a class="navbar-brand" href="" 
+            ><img src="img/logo.gif" height="120" width="78" 
+          /></a> <!--Propiedades del logo-->
+        
+        <!--Barra de navegacion-->
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contactanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Inicia sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Tarjeta del libro-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" id="section">
+          <img
+            src="img/Fisica.jpg"
+            class="img-responsive"
+          />
+        </div>
+
+        <!--Informacion del libro-->
+        <div id="sectionone">
+          <h3>Fundamentos de física</h3>
+          <h4>Raymond A. Serway & Chris Vuille</h4>
+          <p>Precio de compra: <strike> $ 16.95</strike></p>
+          <p>Nuestro precio: <b>Gratis</b></p>
+          <p>Edición N° 10 <br></p>
+          <p>2016<br></p>
+          <a href="libros/Física/Fundamentos de física.pdf"><button type="button" id="download">Descargar</button> </a
+          >&nbsp; &nbsp;
+          <a href="index.html"
+            ><button type="button" id="back">Regresar</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="form">
+          <form>
+            <h3>Reseña del libro:</h3>
+            <br />
+            <p>Mientras que la física puede parecer desafiante, su calidad verdadera es la simplicidad de teorías físicas fundamentales y conceptos que pueden enriquecer su opinión del mundo que le rodea. 
+                Fundamentos de Física, octava edición, proporciona una estrategia clara para conectar esas teorías con un acercamiento constante para la solución de problemas, reforzando cuidadosamente esta metodología a través del texto y conectándola con los ejemplos del mundo real. 
+                El libro está compuesto de 30 capítulos organizados en seis partes: Mecánica, Termodinámica, Vibraciones y ondas, Electricidad y magnetismo, Luz y óptica, y Física moderna.<br><br></p>
+            <a href="https://www.gonvill.com.mx/libro/fundamentos-de-fisica-vol-1-8ed-_17550341"><button type="button" id="more-info">Obtener mas Información</button> </a
+              >&nbsp; &nbsp;
+          <em></em>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!--Pie de pagina-->
+    <div class="footer" style="background-color: black"> <!--Color de pie de pagina-->
+      <div class="container"></div><!--Contendor de informacion-->
+        <div class="row" id="column">
+          <a id="column">Siguenos</a> <a id="column">Contactanos</a> <!--Informacion de las redes-->
+        </div>
+        <div id="media_spacing"> <!--Espacio de iconos-->
+          <ul id="media_icons"> <!--Presentacion de iconos-->
+            <a id="links" href="https://www.facebook.com/jenny.tejada.33821"
+              ><li id="media_list"><i class="fab fa-facebook"></i></li> <!--Etiqueta de enlace a facebook usando un icono de fontAwesome-->
+            </a>
+            <a id="links" href="https://instagram.com/__peke.___?igshid=16h4lxpdgxuja"
+              ><li id="media_list"><i class="fab fa-instagram"></i></li> <!--Etiqueta de enlace a instagram usando un icono de fontAwesome-->
+            </a>
+            <a id="links" href="https://www.linkedin.com/in/rigoberto-mendez-893a631b3/"
+              ><li id="media_list"><i class="fab fa-linkedin-in"></i></li> <!--Etiqueta de enlace a linkedin usando un icono de fontAwesome-->
+            </a>
+          </ul>
+        </div>
+
+        <div class="row" id="column1">© Derechos Reservados Spring-Boooks-2020</div> <!--Derechos de autor-->
+      </div>
+    </div>
+    <script src="js/pop-up.js" type="text/javascript"></script> <!--ventana emergente-->
+    
+  </body>
+</html>
