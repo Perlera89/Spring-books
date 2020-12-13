@@ -1,5 +1,7 @@
 package com.Rigoberto.Aplication.Entidades;
 
+import java.io.Serializable;
+
 //Importaciones.
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,13 +14,13 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "Usuario")
-public class Usuario {
+public class Usuario implements Serializable {
 	private static final long serialVersionUID = 4L;
-	//Generacion automatica del id.
+	// Generacion automatica del id.
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long Id_Usuario;
-	//Mapeo de las tablas de las bases de datos.
+	// Mapeo de las tablas de las bases de datos.
 	@Column(name = "Nombre_Usuario", nullable = false, length = 50)
 	private String NombreUsuario;
 	@Column(name = "Email", nullable = false, length = 50)
@@ -26,7 +28,11 @@ public class Usuario {
 	@Column(name = "Contraseña", nullable = false, length = 50)
 	private String contraseña;
 
-//Constructor
+	// Constructor vacio
+	protected Usuario() {
+	}
+	// Constructor
+
 	public Usuario(Integer IDUsuario, String Nombreusuario, String emaIl, String cOntraseña) {
 		this.Id_Usuario = IDUsuario;
 		this.NombreUsuario = Nombreusuario;

@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!--Tipo de documento-->
-<html lang="es"> <!--Estructura principal e Idioma del documento-->
+<html lang="es" xmlns:th="http://www.thymeleaf.org"> <!--Estructura principal e Idioma del documento-->
 
   <head> <!--Inicio cabecera-->
     <title>Información</title> <!--Titulo de la pagina-->
@@ -24,16 +24,16 @@
       <div class="container-fluid">
         <div class="navbar-header"> <!--Donde esta el logo-->
           <a class="navbar-brand" href="" 
-            ><img src="img/logo.gif" height="120" width="78" 
+            ><img src="img/logo.gif" height="220" width="220" 
           /></a> <!--Propiedades del logo-->
         
         <!--Barra de navegacion-->
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
-            <li class="nav-item"><a class="nav-link" href="login.html">Inicia sesión</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/RegresandoAInicio}">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Contactandonos}">Contactanos</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/SING UP}">Inicia sesión</a></li>
           </ul>
         </div>
       </div>
@@ -44,22 +44,22 @@
       <div class="row">
         <div class="col-lg-4" id="section">
           <img
-            src="img/Calculo.jpg"
+            src="img/Programacion web.jpg"
             class="img-responsive"
           />
         </div>
 
         <!--Informacion del libro-->
         <div id="sectionone">
-          <h3>Cálculo de una variable</h3>
-          <h4>James Stewart</h4>
-          <p>Precio de compra: <strike> $ 136.99</strike></p>
+          <h3>El gran libro de HTML5, CSS3 y JavaScript</h3>
+          <h4>J.D. Gauchad</h4>
+          <p>Precio de compra: <strike> $ 7.59</strike></p>
           <p>Nuestro precio: <b>Gratis</b></p>
-          <p>Edición N° 7 <br></p>
-          <p>2014<br></p>
-          <a href="libros/Matemática/Cálculo de una variable.pdf"><button type="button" id="download">Descargar</button> </a
+          <p>Edición N° 3 <br></p>
+          <p>2019<br></p>
+          <a href="libros/Programación/Programacion web.pdf"><button type="button" id="download">Descargar</button> </a
           >&nbsp; &nbsp;
-          <a href="index.html"
+          <a th:href="@{/RegresandoAINICIO}"
             ><button type="button" id="back">Regresar</button></a
           >
         </div>
@@ -72,12 +72,12 @@
           <form>
             <h3>Reseña del libro:</h3>
             <br />
-            <p>CÁLCULO Trascendentes tempranas es ampliamente reconocido por su precisión matemática y la exactitud, claridad de la exposición y notables ejemplos y conjuntos de problemas. 
-                Millones de estudiantes en todo el mundo han estudiado el cálculo a través del estilo registrado de Stewart, mientras que los instructores han adoptado su planteamiento una y otra vez. 
-                En la séptima edición, Stewart continúa estableciendo el estándar para el curso al tiempo que añade contenido cuidadosamente revisado. 
-                Las pacientes explicaciones, los soberbios ejercicios centrados en la resolución de problemas y las series de ejercicios cuidadosamente graduadas que han hecho de los textos de Stewart best-sellers, continúan proporcionando una base sólida para la séptima edición. 
-                De los estudiantes más impreparados a los más talentosos matemáticos, la redacción y la presentación de Stewart sirven para mejorar el entendimiento y fomentar la confianza.<br><br></p>
-            <a href="https://www.amazon.com/-/es/James-Stewart/dp/6074817839"><button type="button" id="more-info">Obtener mas Información</button> </a
+            <p>El gran libro de HTML5, CSS3 y JavaScript guía al lector paso a paso en el desarrollo de sitios y aplicaciones web. 
+                Después de leer este libro sabrá cómo estructurar sus documentos con HTML, cómo otorgarles estilos con CSS y cómo trabajar con las más poderosas APIs de JavaScript. 
+                Este libro es un curso completo que le enseñará cómo construir sitios webs adaptables y aplicaciones revolucionarias desde cero. Cada capítulo explora conceptos básicos y complejos de HTML, CSS y JavaScript. 
+                La información viene acompañada por ejemplos funcionales que guían al recién iniciado y también al programador experto a través de cada etiqueta, estilo y función incluidos en estos lenguajes. 
+                Este libro incluye: Introducción a HTML, CSS y JavaScript | Modelos de Caja Tradicional y Flexible | Diseño Web Adaptable | Vídeo y Audio | API Formularios | API Canvas | API WebGL | API Web Audio | API IndexedDB | API Web Storage | API File | API WebSocket | API WebRTC | API Stream | API Fullscreen | Ajax Level 2 | API Web Workers | API Drag and Drop | API History | API Web Messaging | API Pointer Lock | API Geolocation | API Page Visibility | API TextTrack y más.<br><br></p>
+            <a href="https://www.amazon.es/gran-libro-HTML5-JavaScript-Edici%C3%B3n/dp/8426724639"><button type="button" id="more-info">Obtener mas Información</button> </a
               >&nbsp; &nbsp;
           <em></em>
         </div>

@@ -27,7 +27,7 @@
   <div class="container-fluid"> <!--Contenedor de la cabecera donde va el logo Inicio y contactanos de ancho completo-->
     <div class="navbar-header"> 
       
-      <a class="navbar-brand" href="index.html"><img src="img/logo1.gif" height="100" width="200"
+      <a class="navbar-brand" href=""><img src="img/logo1.gif" height="100" width="200"
           /></a> <!--barra de navegacion donde se encuentra el logo de la marca, información acerca de la marca de la pagina (no implementado)-->
 
     </div>
@@ -119,7 +119,7 @@
   </div>
 
   <div class="column"> <!--Divisor de columna 2-->
-      <a href="book2.html"> <!--Link de informacion libro 2-->
+      <a th:href ="@{/Book2}"> <!--Link de informacion libro 2-->
     <div class="card"> <!--Carta del libro 2-->
         <img src="img/Filosofia.jpg" class="img-responsive" height="200" width="200"> <!--Presentacion del libro 2-->
      <h3>Filosofía para Dummies</h3>
@@ -131,7 +131,7 @@
   </div>
   
   <div class="column"> <!--Divisor de columna 3-->
-      <a href="book3.html"> <!--Link de informacion libro 3-->
+      <a th:href ="@{/Book3}"> <!--Link de informacion libro 3-->
     <div class="card"> <!--Carta del libro 3-->
         <img src="img/Fisica.jpg" class="img-responsive" height="200" width="200"> <!--Presentacion del libro 3-->
       <h3>Fundamentos de Física</h3>
@@ -143,7 +143,7 @@
   </div>
   
   <div class="column"> <!--Divisor de columna 4-->
-      <a href="book4.html"> <!--Link de informacion libro 4-->
+      <a th:href ="@{/Book4}"> <!--Link de informacion libro 4-->
     <div class="card"> <!--Carta del libro 4-->
         <img src="img/Calculo.jpg" class="img-responsive" height="200" width="200"> <!--Presentacion del libro 4-->
       <h3>Cálculo de una variable</h3>
@@ -155,7 +155,7 @@
   </div>
 
     <div class="column"> <!--Divisor de columna 5-->
-        <a href="book5.html"> <!--Link de informacion libro 5-->
+        <a th:href ="@{/Book5}"> <!--Link de informacion libro 5-->
     <div class="card"> <!--Carta del libro 5-->
         <img src="img/Programacion web.jpg" class="img-responsive" height="200" width="200"> <!--Presentacion del libro 5-->
       <h3>El gran libro de HTML5, CSS3 y JavaScript</h3>

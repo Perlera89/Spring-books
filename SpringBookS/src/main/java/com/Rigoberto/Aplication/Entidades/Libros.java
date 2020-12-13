@@ -1,5 +1,7 @@
 package com.Rigoberto.Aplication.Entidades;
 
+import java.io.Serializable;
+
 //Importaciones.
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,14 +14,14 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "Libros")
-public class Libros {
+public class Libros implements Serializable {
 	private static final long serialVersionUID = 2L;
-	//Generacion automatica del id.
+	// Generacion automatica del id.
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	private long Id_Libro;
-	//Mapeo de las tablas de las bases de datos.
-	@Column(name = "Nombre_Libro", nullable  = false, length = 200)
+	// Mapeo de las tablas de las bases de datos.
+	@Column(name = "Nombre_Libro", nullable = false, length = 200)
 	private String NombreLibro;
 	@Column(name = "Descripcion", nullable = false, length = 5000)
 	private String descripcion;
@@ -30,6 +32,10 @@ public class Libros {
 	@Column(name = "Foto", nullable = false, length = 400)
 	private String foto;
 
+	// Constructor vacio
+	protected Libros() {
+	}
+
 	// Constructor
 	public Libros(long IDlibro, String nombrelibro, String desCripcion, String pRecio, String linK, String fotO) {
 		this.Id_Libro = IDlibro;
@@ -39,7 +45,8 @@ public class Libros {
 		this.link = linK;
 		this.foto = fotO;
 	}
-    // Getters and Setters.
+
+	// Getters and Setters.
 	public long getId_Libro() {
 		return Id_Libro;
 	}
