@@ -106,7 +106,7 @@ public class ControladorInicio {
 	// Mapeo de libro1.
 	@GetMapping("/Book1")
 	public String Mostralibro1() {
-		return "book1";
+		return "Book1";
 	}
 
 	// Mapeo regresar al inicio Libro1.
@@ -168,7 +168,7 @@ public class ControladorInicio {
 	// Mapeo BOOK2.
 	@GetMapping("/Book2")
 	public String MostrarLibro2() {
-		return "book2";
+		return "Book2";
 	}
 
 	// Mapeo de barra boton regresar al inicio BOOK2.
@@ -228,7 +228,7 @@ public class ControladorInicio {
 	// Mapeo BOOK3.
 	@GetMapping("/Book3")
 	public String MostrarLibro3() {
-		return "book3";
+		return "Book3";
 	}
 
 	// Mapeo de barra boton regresar al inicio BOOK3.
@@ -288,7 +288,7 @@ public class ControladorInicio {
 	// Mapeo BOOK4.
 	@GetMapping("/Book4")
 	public String MostrarLibro4() {
-		return "book4";
+		return "Book4";
 	}
 
 	// Mapeo de barra boton regresar al inicio BOOK4.
@@ -342,7 +342,7 @@ public class ControladorInicio {
 	// Mapeo BOOK5.
 	@GetMapping("/Book5")
 	public String MostrarLibro5() {
-		return "book5";
+		return "Book5";
 	}
 
 	// Mapeo de barra boton regresar al inicio BOOK5.

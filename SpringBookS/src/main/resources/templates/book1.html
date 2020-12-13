@@ -33,7 +33,21 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="nav-item"><a class="nav-link"  th:href="@{/inicio}">Inicio</a></li>
             <li class="nav-item"><a class="nav-link"  th:href="@{/contactos}">Contactanos</a></li>
-            <li class="nav-item"><a class="nav-link"  th:href="@{/SingUP}">Inicia sesión</a></li>
+            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link"  th:href="@{/SingUP}">Inicia sesión</a></li>
+            
+            <li class="dropdown" sec:authorize="isAuthenticated()" >
+			  <a class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span sec:authentication="name"></span>
+			  </a>
+			
+			  <div class="dropdown-menu nav-item" >	    
+			    <form th:action="@{/logout}" method="post">
+			    	<button type="submit" class="btn btn-danger nav-link">Cerrar Sesión</button>
+			    </form>
+			    
+			  </div>
+			  
+			</li>
           </ul>
         </div>
       </div>
@@ -57,7 +71,7 @@
           <p>Nuestro precio: <b>Gratis</b></p>
           <p>Edición Paidos <br></p>
           <p>2015<br></p>
-          <a th:href="@{/Descargando book1}" href="/static/Libro/Desarrollo Personal/Los 7 hábitos de la gente altamente efectiva de Stephen R. Covey .pdf"><button type="button" id="download" >Descargar</button> </a
+          <a href="Libros/Desarrollo Personal/Los 7 hábitos de la gente altamente efectiva de Stephen R. Covey .pdf"><button type="button" id="download" download>Descargar</button> </a
           > &nbsp; &nbsp;
           <a th:href ="@{/RegresaInicio}"
             ><button type="button" id="back">Regresar</button></a

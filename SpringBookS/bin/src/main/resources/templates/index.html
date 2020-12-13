@@ -1,6 +1,5 @@
 <!DOCTYPE html> <!--Tipo de documento-->
-<html lang="es" xmlns:th="http://www.thymeleaf.org"
-xmlns:sec="http://www.thymeleaf.org/extras/spring-security"> <!--Estructura principal e Idioma del documento-->
+<html lang="es" xmlns:th="http://www.thymeleaf.org"> <!--Estructura principal e Idioma del documento-->
 
 <!--Cabecera-->
 <head>
@@ -37,24 +36,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security"> <!--Estructura prin
           
         <li class="nav-item"><a class="nav-link" href="index.html" th:text="${inicio}" th:href="@{/Inicio}">Inicio</a></li> <!--Boton de inicio-->
           <li class="nav-item"><a class="nav-link" href="contacto.html" th:text="${Contactos}" th:href="@{/Contactanos}">Contactanos</a></li> <!--Boton de contactanos-->
-          <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" href="login.html" th:text="${SingUp}" th:href="@{/Login}">Inicia sesión</a></li><!--Inicio de sesion-->
-          
-          <li class="dropdown" sec:authorize="isAuthenticated()" >
-			  <a class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    <span sec:authentication="name"></span>
-			  </a>
-			
-			  <div class="dropdown-menu nav-item" >	    
-			    <form th:action="@{/logout}" method="post">
-			    	<button type="submit" class="btn btn-danger nav-link">Cerrar Sesión</button>
-			    </form>
-			    
-			  </div>
-			  
-			</li>
-
-</div>
-
+          <li class="nav-item"><a class="nav-link" href="login.html" th:text="${SingUp}" th:href="@{/Login}">Inicia sesión</a></li><!--Inicio de sesion-->
       </ul>
       <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--Barra de navegacion contenida a un lado-->
         <ul class="nav navbar-nav navbar-right"> <!--Lista de los elementos que estan a un lado de la barra de navegacion-->

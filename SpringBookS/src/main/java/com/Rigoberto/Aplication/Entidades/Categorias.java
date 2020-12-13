@@ -23,7 +23,7 @@ public class Categorias implements Serializable {
 	private long Id_Categorias;
 	// Mapeo de las tablas de las bases de datos.
 	@Column(name = "Nombre_Categoria", nullable = false, length = 50)
-	private String nombreCategoria;
+	private String Nombre_categoria;
 
 	// Constructor vacio
 	protected Categorias() {
@@ -32,7 +32,7 @@ public class Categorias implements Serializable {
 	// Constructor
 	public Categorias(long IdCategorias, String NombreCategoria) {
 		this.Id_Categorias = IdCategorias;
-		this.nombreCategoria = NombreCategoria;
+		this.Nombre_categoria = NombreCategoria;
 	}
 
 	// Getters And setters.
@@ -45,11 +45,11 @@ public class Categorias implements Serializable {
 	}
 
 	public String getNombreCategoria() {
-		return nombreCategoria;
+		return Nombre_categoria;
 	}
 
 	public void setNombreCategoria(String nombreCategoria) {
-		this.nombreCategoria = nombreCategoria;
+		this.Nombre_categoria = nombreCategoria;
 	}
 
 	public static long getSerialversionuid() {
