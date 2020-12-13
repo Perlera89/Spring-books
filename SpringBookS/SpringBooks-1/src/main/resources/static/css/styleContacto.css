@@ -1,0 +1,133 @@
+/*************************************************************************************************/
+/*   Texto   */
+/*************************************************************************************************/
+.fuente-raleway{ /*fuente*/
+  font-family: "Raleway", arial;
+}
+.EstiloTexto{ /*estilo fuente de informacion fuente*/
+  color: white;
+  font-size:25px;
+  text-shadow: 2px 2px 4px #000000;
+  }
+  .conEspaciado{ /*espaciado*/
+    line-height: 3vh;
+}
+.text-center{ /*texto centrado*/
+  text-align: center;
+}
+
+/*************************************************************************************************/
+/*   Tarjeta de informacion   */
+/*************************************************************************************************/
+.BackgroundText{ /*caja de fondo de arriba*/
+  background-color: #d2d2d294; /*Color*/
+  box-shadow: 1px 1px 1px 10px #111010; /*contorno de la caja*/
+  border-radius: 10px; /*borde redondeado*/  
+  margin: 8vh 14.2vh 1vh 14.2vh; /*margen*/
+  padding: 9vh; /*relleno*/
+}
+
+  .TextBack{ /*texto de salida*/
+  width:100%;
+  color:rgb(255, 255, 255);
+  font-size: 30px;
+  }
+
+  
+  *, *:before, *:after { /*estilo texto de salida*/
+    box-sizing: inherit; /*ajustar forma de la caja*/
+  }
+
+  a:link{ /*sin decoracion*/
+    text-decoration:none;
+}
+  
+/*************************************************************************************************/
+/*   Fondo   */
+/*************************************************************************************************/
+  html, body { /*Fondo*/
+    background-image: url(../img/libro2.jpg);
+  }
+  
+
+  html { /*Tamaño de fuente de los iconos*/
+    font-size: 0.625em;
+  }
+  
+/*************************************************************************************************/
+/*   Division de redes sociales   */
+/***************************************************************************************************/
+  .soc { /*Cuadro de iconos*/
+    display: block; /*elemento en forma de cuadro*/
+    margin: 0 auto; /*margen*/
+    padding: 48px 4.8rem; /*relleno*/
+    text-align: center; /*alineacion de iconos al centro*/
+    width: 110rem 100%; /*anchura*/
+  }
+
+  .soc li { /*forma de la lista de iconos*/
+    display: inline-block; /*elemento en forma de cuadros en linea*/
+    margin: 12px 1.2rem; /*Margen*/
+  }
+
+  .soc a, .soc svg { /*forma de la lista de iconos*/
+    display: block; /*elemento en forma de cuadro*/
+  }
+
+  .soc a { /*forma de la lista de iconos*/
+    position: relative; /*posicion*/
+    height: 96px; /*altura*/
+    height: 9.6rem; /*altura*/
+    width: 96px; /*anchura*/
+    width: 9.6rem; /*anchura*/
+  }
+  
+/*************************************************************************************************/
+/*   Iconos de redes sociales   */
+/***************************************************************************************************/
+   .icon-1:hover, .icon-2:hover, .icon-3:hover,  .icon-4:hover { /*Animacion al pasar cursor en los iconos*/
+    border-radius: 100%; /*borde redondeado*/
+    color: #0e1a25; /*color */
+    fill: #0e1a25; /*pinta el intrior del icono*/
+    -webkit-transform: scale(1.25); /*anchura*/
+    transform: scale(1.25); /*esala de transformacion*/
+    transition: background-color 0.5s, transform 0.5s ease-out; /*animacion al pasar cursor en los iconos*/
+  }
+
+  .icon-1 { /*color de de icono email*/
+    color: #00690e;
+    fill: #00690e;
+  }
+
+  .icon-1:hover { /*color de animacion al pasar cursor al icono email*/
+    background: #00690e;
+  } 
+
+  .icon-2 { /*color de de icono instagran*/
+    color: #e913d7;
+    fill: #e913d7;
+  }
+
+  .icon-2:hover { /*color de animacion al pasar cursor al icono instagran*/
+    background: #e913d7;
+  }
+ 
+  .icon-3 { /*color de de icono twiter*/
+    color: #007df1;
+    fill: #007df1;
+  }
+
+  .icon-3:hover { /*color de animacion al pasar cursor al icono twitter*/
+    background: #007df1;
+  }
+
+  .icon-4 { /*color de de icono youtube*/
+    color: #f70101;
+    fill: #f70101;
+  }
+
+  .icon-4:hover { /*color de animacion al pasar cursor al icono youtube*/
+    background: #f70101;
+  }
+/*************************************************************************************************/
+/***************************************************************************************************/

@@ -1,0 +1,301 @@
+/********************************************************/
+/*Barra de navegación*/
+/********************************************************/
+.navbar { 
+    padding-left: 0%; /*relleno izquierdo*/
+    padding-right: 0%; /*relleno derecho*/
+    background-color: transparent; /*fondo*/
+  }
+  
+  .navbar-right { /*Barra iquierda*/
+    padding-top: 4.5%; /*rellleno arriba*/
+  }
+  
+  /********************************************************/
+  /*Barra de navegacion de items*/
+  /********************************************************/
+  .nav-link {
+    font-family: 'Lato'; /*Fuente*/
+    color: black; /*Color*/
+    text-decoration: none; /*Formato del texto*/
+    opacity: 1; /*opacidad*/
+    font-size: 2.0rem; /*Tamaño*/
+  
+  }
+  
+  /********************************************************/
+  /*Categoria de libros*/
+  /********************************************************/
+  #all_books {
+    padding-left: 11%; /*relleno izquierdo*/ 
+    padding-right: 10%; /*relleno derecho*/
+  }
+  
+  /********************************************************/
+  /*Carrusel*/
+  /********************************************************/
+  .fade-carousel { /*Imagenes*/
+    position: relative; /*Posicion*/
+    height: 70vh; /*Altura*/
+  }
+  
+  .fade-carousel .carousel-inner .item {  /*Imagenes*/
+    height: 70vh; /*Altura*/
+  }
+  
+  .fade-carousel .carousel-indicators>li { /*Indicadores*/
+    margin: 0 2px; /*Margen*/
+    background-color: white; /*Color centro*/
+    border-color: black; /*Color contorno*/
+    opacity: 7; /*Opacidad*/
+  }
+  
+  .fade-carousel .carousel-indicators>li.active { /*Indicador activo*/
+    width: 10px; /*Ancho*/
+    height: 10px; /*Altura*/
+    opacity: 1; /*Opacidad*/
+  }
+  
+  /********************************************************/
+  /*Cabeceras de texto del carrusel*/
+  /********************************************************/
+  #hero1 { /*Subtitulos del carrusel*/
+    -webkit-text-stroke: 1px black; /*Estilo gradiante*/
+    -webkit-text-fill-color: white; /*Estilo gradiante*/
+    font-family: 'Lato'; /*Fuente*/
+    font-size: 40px; /*Tamaño*/
+  }
+  
+  .hero { /*Texto del carrusel*/
+    position: absolute; /*Posicion*/
+    top: 50%; /*Posicion altura*/
+    left: 50%; /*Posicion izquierda*/
+    z-index: 3; /*Estilo de orden de un posicionamiento y sus descendientes */
+    color: #fff; /*Color*/
+    -webkit-text-stroke: .5px black; /*Estilo gradiante*/
+    -webkit-text-fill-color: white; /*Estilo gradiante*/
+    text-align: center; /*Aliniacion*/
+    text-transform: uppercase; /*Cambio de minusculas a mayusculas*/
+    font-family: 'Lato'; /*Fuente*/
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .75); /*Color sombra*/
+    transform: translate3d(-50%, -50%, 0); /*Posicion centrada*/
+  }
+  
+  .hero h1 { /*Estilo del titulo de las imagenes del carrusel*/
+    font-size: 6em; /*Tamaño*/
+    font-weight: bold; /*Estilo fuent4e*/
+    margin: 0; /*Margen*/
+    padding: 0; /*Relleno*/
+  }
+  
+  .fade-carousel .carousel-inner .item .hero { /*Transicion normal */
+    opacity: 0; /*Opacidad*/
+    -webkit-transition: 1s all ease-in-out .1s; /*Adaptacion de transiones en otros navegadores*/
+    transition: 1s all ease-in-out .1s; /*Tiempo transicion*/
+  }
+  
+  .fade-carousel .carousel-inner .item.active .hero { /*Transicion activa*/
+    opacity: 100%; /*Opacidad de texto*/
+    -webkit-transition: 2s all ease-in-out .1s; /*Adaptacion de transiones en otros navegadores*/
+    transition: 2s all ease-in-out .1s; /*Tiempo mantener transicion*/
+  }
+  
+  /********************************************************/
+  /*diapositivas de imagenes de fodo*/
+  /********************************************************/
+  .fade-carousel .slides .slide-1,
+  .fade-carousel .slides .slide-2,
+  .fade-carousel .slides .slide-3 { /*imagenes del carrusel*/
+    height: 70vh; /*Altura*/
+    background-size: cover; /*Tamaño*/
+    background-position: center center; /*Posicion de fondo*/
+    background-repeat: no-repeat; /*No repetir fondo*/
+   opacity: 90%; /*Opacidad*/
+  }
+  
+  /*imagenes del carrusel*/
+  .fade-carousel .slides .slide-1 {
+    background-image: url(../img/libro1.jpg); /*Imagen 1 del carrusel*/
+  }
+  
+  .fade-carousel .slides .slide-2 {
+    background-image: url(../img/libro3.jpg); /*Imagen 2 del carrusel*/
+  }
+  
+  .fade-carousel .slides .slide-3 {
+    background-image: url(../img/libro2.jpg); /*Imagen 3 del carrusel*/
+  }
+  
+  /********************************************************/
+  /*barra de navegacion*/
+  /********************************************************/
+  .example { /*barra*/
+    margin-left: 10.5%; /*margen izquierdo*/
+    margin-right: 10.5%; /*margen derechio*/
+  }
+  
+  form.example input[type=text] { /*formulario de barra*/
+    padding: 10px; /*relleno*/
+    font-size: 17px; /*Tamaño fuente*/
+    border: 1px solid grey; /*Borde*/
+    float: left; /*Ubicador izquiedo*/
+    width: 80%; /*Anchura*/
+    background: #f1f1f1; /*Fondo*/
+  
+  }
+  
+  form.example button { /*Boton de bsucar*/
+    float: left; /*Ubicador izquiedo*/
+    width: 20%; /*Anchura*/
+    padding: 10px; /*relleno*/
+    background: black; /*Fondo*/
+    color: white; /*color*/
+    font-size: 17px; /*tamaño de fuent4e*/
+    border: 1px solid grey; /*borde, grosor y color*/
+    border-left: none; /*Sin borde izquierdo*/
+    cursor: pointer; /*Cursor en forma de puntero*/
+  }
+  
+  form.example button:hover { /*lupa*/
+    background: grey; /*color lupa*/
+  }
+  
+  form.example::after { /*divisor con libros*/
+    content: ""; /*generador de contenido*/
+    clear: both; /*movido hacia abajo*/
+    display: table; /*elemento como taqbla*/
+  }
+  /********************************************************/
+  /*diseño libros*/
+  /********************************************************/
+  #container { /*Separador*/
+    padding: 2px 16px; /*relleno*/
+  }
+
+  
+  #column { /*Columna de informacion*/
+    text-align: center; /*alineacion central*/
+    padding: 10px; /*relleno*/
+    color: lightgrey; /*color*/
+    text-decoration: none; /*estilo de texto*/
+    font-size: 18px; /*tamaño de fuente*/
+    font-family: 'Lato'; /*familia de fuent4e*/
+    font-weight: 600; /*Altura de fuente*/
+  
+  }
+  
+  #column1 { /*fColumna de derechos de autor*/
+    text-align: center; /*alineacion central*/
+    padding: 10px; /*relleno*/
+    color: darkgrey; /*color*/
+    text-decoration: none; /*estilo de texto*/
+    font-size: 18px; /*tamaño de fuente*/
+    font-family: 'Lato'; /*familia de fuent4e*/
+  
+  }
+  
+  
+  .column { /*Columnas de los libros*/
+    float: left; /*Ubicador izquiedo*/
+    width: 20%; /*Altura*/
+    padding: 0 10px; /*relleno*/
+    margin-bottom: 3%; /*margen abajo*/
+  }
+  
+  
+  .row { /*margenes*/
+    margin-right: 10%; /*margen derecho*/
+    margin-left: 10%; /*margen izquierdo*/
+  }
+  
+  .row:after { /*margen*/
+    content: ""; /*generador de contenido*/
+    display: table; /*elemento como tabla*/
+    clear: both; /*movido hacia abajo*/
+  }
+  
+  .card { /*Estilos de tarjetas*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Sombra de tarjeta*/
+    padding: 15px; /*relleno de borde*/
+    text-align: center; /*aliniaccion central*/
+    background-color: #f1f1f1; /*fondo*/
+    transition: transform 0.3s; /*tiempo de transicion*/
+  }
+  
+  .card:hover { /*movimiento de tarjeta*/
+    transform: translateY(-10px); /*movimiento de transicion*/
+  }
+  
+  /********************************************************/
+  /*diseño de texto las tarjetas */
+  /********************************************************/
+  h3 { /*titulo tarjeta*/
+    text-align: left; /*aliniacion izquierda*/
+  }
+  
+  p { /*descripcion*/
+    text-align: left; /*aliniacion izquierda*/
+  }
+  
+  a { /*Color titulo*/
+    text-decoration: none; /*sin decoracion*/
+    color: black; /*color*/
+  }
+  
+  a:hover { /*en movimiento*/
+    text-decoration: none; /*sin decoracion*/
+    color: black; /*color*/
+  }
+  
+  /********************************************************/
+  /* iconos de redes sociales        */
+  /********************************************************/
+  
+  #media_spacing { /*espacio*/
+    margin-right: 3%; /*margen derecho*/
+  }
+  
+  #media_icons { 
+    display: flex; /*elemento de bloque especificado*/
+    text-align: center; /*alineado de texto al centro*/
+    align-items: center; /*alineado de items al centro*/
+    justify-content: center; /*items justificado al centro*/
+    background: #000000; /*fondo*/
+  }
+  
+  #media_icons #media_list { /*Presentacion de iconos*/
+    position: relative; /*posicion*/
+    display: block; /*elemento de bloque cuadro*/
+    color: #666; /*color*/
+    font-size: 30px; /*tamaño de fuente*/
+    height: 60px; /*altura*/
+    width: 60px; /*grosor*/
+    background: #171515; /*fondo*/
+    line-height: 60px; /*altura de icono*/
+    border-radius: 50%; /*borde de items*/
+    margin: 0 15px; /*margen*/
+    cursor: pointer; /*cursor de forma puntero*/
+    transition: 0.5s; /*transicion*/
+  }
+  
+  #media_icons #media_list:before { /*items al pasar el cursor*/
+    position: absolute; /*posicion*/
+    content: ""; /*generador de contenido*/
+    top: 0; /*abajo*/
+    left: 0; /*iaquierda*/
+    background-color: #d35400; /*fondo*/
+    height: 100%; /*altura*/
+    width: 100%; /*anchura*/
+    border-radius: 50%; /*bordes redondeados de items*/
+    z-index: -10; /*transicion al frente*/
+    transform: scale(0.9); /*escala de movimiento*/
+    transition: 0.5s; /*tiempo*/
+  }
+  
+  #media_icons #media_list:nth-child(1):hover { /*Color al pasar cursor*/
+    color: #456cba; /*Color*/
+    box-shadow: 0 0 15px #4267b2; /*sombra de caja*/
+    text-shadow: 0 0 15px #4267b2; /*Sombra de t4exto*/
+  }
+
+  /****************************************************************************/

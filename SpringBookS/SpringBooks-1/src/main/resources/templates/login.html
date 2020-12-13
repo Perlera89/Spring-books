@@ -1,0 +1,40 @@
+
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang="es" xmlns:th="http://www.thymeleaf.org"> <!--Estructura principal e Idioma del documento-->
+
+<!--Cabecera-->
+    <head>
+        <title>Iniciar sesión</title>  <!--Titulo de la pagina-->
+        <meta charset="UTF-8"> <!--Caracteres del documento-->
+        <link rel = "icon" href ="img/icono.png" type = "image/x-icon"> <!--icono-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Compatibilidad con tamaños de pantalla-->
+        <meta name="description" content="Spring Books es una libreria gratuita"> <!--Descripcion del documento-->
+
+        <!--Dependencias-->
+        <link rel="stylesheet" href="css/styleLogin.css">
+        
+    </head>
+
+    <!--Cuerpo del documento-->
+    <body>
+        <div class="login-box"> <!--tarjeta del login-->
+            <img class="avatar" src="img/icono.png" alt="logo"> <!--Logo-->
+            <h1>Inicia sesión aqui</h1> <!--Titulo-->
+            <form>
+                <!-- usuario -->
+                <label for="username">Usuario</label>
+                <input type="text" placeholder="Ingresa tu Usuario">
+
+                <!-- contraseña -->
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Ingresa tu Contraseña">
+                
+                <input type="submit" th:href="@{/Redirigiendo}" value="Ingresar"> <!-- Boton -->
+                
+                <a href="index.html" th:href="@{/Volver al inicio}">Volver a la pagina principal</a> <!--Acceso para regresar-->
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
