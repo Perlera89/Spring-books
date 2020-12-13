@@ -4,83 +4,83 @@
   /****************************************************************/
   body {
     margin: 0; /*Margen*/
-    padding: 0; /*relleno*/
+    padding: 0; /*Relleno*/
     background: url(../img/libro2.jpg) no-repeat center top; /*Fondo*/
-    background-size: cover; /*forma de fondo*/
-    font-family: sans-serif; /*fuente texto*/
-    height: 100vh; /*altura*/
+    background-size: cover; /*Forma de fondo*/
+    font-family: sans-serif; /*Fuente texto*/
+    height: 100vh; /*Altura*/
 }
 
 /****************************************************************/
 /*Diseño de la tarjeta*/
 /****************************************************************/
 .login-box { /*Forma de la tarjeta*/
-width: 320px; /*anchura*/
-height: 420px; /*altura*/
-background: #000; /*fondo*/
-color: #fff; /*color*/
-top: 50%; /*posicion arriba*/
-left: 50%; /*posicion izqueirda*/
-position: absolute; /*forma posicion*/
-transform: translate( -50%, -50%); /*posicon de coordenadas*/
-box-sizing: border-box; /*tamaño de tarjeta*/
-padding: 70px 30px; /*relleno*/
+width: 320px; /*Anchura*/
+height: 420px; /*Altura*/
+background: #000; /*Fondo*/
+color: #fff; /*Color*/
+top: 50%; /*Posicion arriba*/
+left: 50%; /*Posicion izqueirda*/
+position: absolute; /*Porma posicion*/
+transform: translate( -50%, -50%); /*Posicon de coordenadas*/
+box-sizing: border-box; /*Tamaño de tarjeta*/
+padding: 70px 30px; /*Relleno*/
 }
 
 /****************************************************************/
 /*Interior de la tarjeta*/
 /****************************************************************/
 .login-box .avatar{ /*Logo de la tarjera*/
-width: 35%; /*anchura*/
-height: 25%; /*altura*/
-border-radius: 200px; /*borde redondeado*/
-position: absolute; /*forma de posicion le logo*/
-top:-50px; /*altura*/
-left: calc(50% - 50px); /*posicion de logo*/
+width: 35%; /*Anchura*/
+height: 25%; /*Altura*/
+border-radius: 200px; /*Borde redondeado*/
+position: absolute; /*Forma de posicion le logo*/
+top:-50px; /*Altura*/
+left: calc(50% - 50px); /*Posicion de logo*/
 }
 
 .login-box h1 { /*Titulo de la tarjeta*/
-margin: 10px; /*margen*/
-padding: 0 0 20px; /*relelno*/
-text-align: center; /*alineacion de texto*/
-font-size: 22px; /*tamaño fuente*/
+margin: 10px; /*Margen*/
+padding: 0 0 20px; /*Relelno*/
+text-align: center; /*Alineacion de texto*/
+font-size: 22px; /*Tamaño fuente*/
 }
 
 .login-box label{ /*Texto del formulario*/
-margin: 0; /*margen*/
-padding: 0; /*relleno*/
-font-weight: bold; /*ancho y estilo fuente*/
-display: block; /*elemento en forma de cuadro*/
+margin: 0; /*Margen*/
+padding: 0; /*Relleno*/
+font-weight: bold; /*Ancho y estilo fuente*/
+display: block; /*Elemento en forma de cuadro*/
 }
 
 .login-box input{ /*Formulario*/
-width: 100%; /*anchura*/
-margin-bottom: 20px; /*margen Fondo*/
-border: none; /*sin borde*/
-border-bottom: 1px solid #fff; /*borde de abajo*/
+width: 100%; /*Anchura*/
+margin-bottom: 20px; /*Margen Fondo*/
+border: none; /*Sin borde*/
+border-bottom: 1px solid #fff; /*Borde de abajo*/
 background: transparent; /*Fondo*/
-outline: none; /*sin linea*/
-height: 40px; /*altura*/
-color: #fff; /*color*/
-font-size: 16px;  /*tamaño fuente*/
+outline: none; /*Sin linea*/
+height: 40px; /*Altura*/
+color: #fff; /*Color*/
+font-size: 16px;  /*Tamaño fuente*/
 }
 
-.login-box input[type="submit"]{ /*boton formulario*/
-border: none; /*sin borde*/
+.login-box input[type="submit"]{ /*Boton formulario*/
+border: none; /*Sin borde*/
 background: #f0c351; /*Fondo*/
-font-size: 18px; /*tamaño fuente*/
-border-radius: 20px; /*borde redondeado*/
+font-size: 18px; /*Tamaño fuente*/
+border-radius: 20px; /*Borde redondeado*/
 }
 
-.login-box a{ /*texto*/
-    text-decoration: none; /*sin decoracion*/
-    font-size: 18px; /*tamaño*/
-    line-height: 18px; /*altura linea*/
-    color: darkgray; /*color*/
+.login-box a{ /*Texto*/
+    text-decoration: none; /*Sin decoracion*/
+    font-size: 18px; /*Tamaño*/
+    line-height: 18px; /*Altura linea*/
+    color: darkgray; /*Color*/
 }
 
-.login-box a:hover{ /*color al pasar cursor en texto abajo*/
-    color:#fff /*color*/
+.login-box a:hover{ /*Color al pasar cursor en texto abajo*/
+    color:#fff /*Color*/
 }
 /****************************************************************/
 /****************************************************************/
