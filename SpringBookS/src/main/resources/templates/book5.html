@@ -31,9 +31,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" th:href="@{/RegresandoAInicio}">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" th:href="@{/Contactandonos}">Contactanos</a></li>
-            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/SING UP}">Inicia sesión</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Inicio5}">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Contactos5}">Contactanos</a></li>
+            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/Singup5">Inicia sesión</a></li>
             
              <li class="dropdown" sec:authorize="isAuthenticated()" >
 			  <a class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,16 +63,16 @@
         </div>
 
         <!--Informacion del libro-->
-        <div id="sectionone">
-          <h3>El gran libro de HTML5, CSS3 y JavaScript</h3>
-          <h4>J.D. Gauchad</h4>
+        <div id="sectionone" th:each = "Libro5 : ${Libro5}">
+          <h3 th:text = "${Libro5.NombreLibro5}"></h3>
+          <h4 th:text = "${Libro5.autor5}"></h4>
           <p>Precio de compra: <strike> $ 7.59</strike></p>
-          <p>Nuestro precio: <b>Gratis</b></p>
+          <p>Nuestro precio: <b th:text = "${Libro5.precio5}"></b></p>
           <p>Edición N° 3 <br></p>
           <p>2019<br></p>
-          <a href="libros/Programación/Programacion web.pdf"><button type="button" id="download">Descargar</button> </a
+          <a href="libros/Programación/Programacion web.pdf"><button type="button" id="download" >Descargar</button> </a
           >&nbsp; &nbsp;
-          <a th:href="@{/RegresandoAINICIO}"
+          <a th:href="@{/Regresa5}"
             ><button type="button" id="back">Regresar</button></a
           >
         </div>
@@ -85,13 +85,12 @@
           <form>
             <h3>Reseña del libro:</h3>
             <br />
-            <p>El gran libro de HTML5, CSS3 y JavaScript guía al lector paso a paso en el desarrollo de sitios y aplicaciones web. 
-                Después de leer este libro sabrá cómo estructurar sus documentos con HTML, cómo otorgarles estilos con CSS y cómo trabajar con las más poderosas APIs de JavaScript. 
-                Este libro es un curso completo que le enseñará cómo construir sitios webs adaptables y aplicaciones revolucionarias desde cero. Cada capítulo explora conceptos básicos y complejos de HTML, CSS y JavaScript. 
-                La información viene acompañada por ejemplos funcionales que guían al recién iniciado y también al programador experto a través de cada etiqueta, estilo y función incluidos en estos lenguajes. 
-                Este libro incluye: Introducción a HTML, CSS y JavaScript | Modelos de Caja Tradicional y Flexible | Diseño Web Adaptable | Vídeo y Audio | API Formularios | API Canvas | API WebGL | API Web Audio | API IndexedDB | API Web Storage | API File | API WebSocket | API WebRTC | API Stream | API Fullscreen | Ajax Level 2 | API Web Workers | API Drag and Drop | API History | API Web Messaging | API Pointer Lock | API Geolocation | API Page Visibility | API TextTrack y más.<br><br></p>
+             <div id="sectionone" th:each = "Libro5 : ${Libro5}">
+            <p th:text = "${Libro5.detalle5}"><br><br></p>
             <a href="https://www.amazon.es/gran-libro-HTML5-JavaScript-Edici%C3%B3n/dp/8426724639"><button type="button" id="more-info">Obtener mas Información</button> </a
               >&nbsp; &nbsp;
+              </div>
+              </form>
           <em></em>
         </div>
       </div>

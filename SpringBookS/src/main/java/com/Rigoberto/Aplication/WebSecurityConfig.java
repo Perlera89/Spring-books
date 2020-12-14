@@ -24,14 +24,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 //	trabajar con las autorizaciones de las paginas de los usuarios
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/","/Inicio","/Contactanos","/Volver a inicio","/Login","/Volver al inicio","/inicio","/contactos","/SingUP","/RegresaInicio"
-				,"/INICIO","/CONTACTOS","/SINgup","/Descargando book2","/Regresando al Inicio"
-				,"/Regresando Al INICIO","/CONTACTANOs","/SIN gup","/Descargando book3","/Regresando al INicio"
-				,"/RegresandoInicio","/ContactaNOS","/SINGUP","/RegresandoINICIO"
-				,"/RegresandoAInicio","/Contactandonos","/SING UP","/RegresandoAINICIO","/css/**","/img/**","/libros/**")
+		http.authorizeRequests().antMatchers("/","/Inicio","/Contactanos","/Volver a inicio","/Login","/Volver al inicio","/Inicio1","/Contactos1","/Singup1","/Regresa1"
+				,"/Inicio2","/Contactos2","/Singup2","/Descargando book2","/Regresa2"
+				,"/Inicio3","/Contactos3","/Singup3","/Descargando book3","/Regresa3"
+				,"/Inicio4","/Contactos4","/Singup4","/Regresa4"
+				,"/Inicio5","/Contactos5","/Singup5","/Regresa5","/css/**","/img/**","/libros/**")
 		.permitAll()
 		.antMatchers("/book1/**","/book2/**","/book3/**","/book4/**","/book5/**").hasAnyAuthority("Manuel")
 		.antMatchers("/book1/**","/book2/**","/book3/**","/book4/**","/book5/**").hasAnyRole("Perlera89")
+		.antMatchers("/book1/**","/book2/**","/book3/**","/book4/**","/book5/**").hasAnyAuthority("rigo")
 		.anyRequest().authenticated()
 		.and()
 		.formLogin().loginPage("/Login")
@@ -47,7 +48,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		.dataSource(dataSource)
 		.passwordEncoder(passEncoder)
 		.authoritiesByUsernameQuery("select username, password, enabled from users where username=?")
-		.authoritiesByUsernameQuery("select u.username, r.rol from users u, roles r where r.user_id = u.id and u.username=?");
+		.authoritiesByUsernameQuery("select u.username, r.rol from users u, roles r where r.user_id = u.Id_user and u.username=?");
 	}
 
 

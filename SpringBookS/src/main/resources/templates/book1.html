@@ -31,9 +31,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link"  th:href="@{/inicio}">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link"  th:href="@{/contactos}">Contactanos</a></li>
-            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link"  th:href="@{/SingUP}">Inicia sesión</a></li>
+            <li class="nav-item"><a class="nav-link"  th:href="@{/Inicio1}">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link"  th:href="@{/Contactos1}">Contactanos</a></li>
+            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link"  th:href="@{/Singup1}">Inicia sesión</a></li>
             
             <li class="dropdown" sec:authorize="isAuthenticated()" >
 			  <a class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,16 +64,16 @@
         </div>
 
         <!--Informacion del libro-->
-        <div id="sectionone" >
-          <h3 th:href>Los 7 hábitos de la gente altamente efectiva</h3>
-          <h4>Stephen R. Covey</h4>
+        <div id="sectionone" th:each = "Libro1 : ${Libro1}">
+          <h3 th:text = "${Libro1.NombreLibro}"></h3>
+          <h4 th:text = "${Libro1.autor}"></h4>
           <p>Precio de compra: <strike> $ 9.45</strike></p>
-          <p>Nuestro precio: <b>Gratis</b></p>
+          <p>Nuestro precio: <b th:text = "${Libro1.precio}"></b></p>
           <p>Edición Paidos <br></p>
           <p>2015<br></p>
           <a href="Libros/Desarrollo Personal/Los 7 hábitos de la gente altamente efectiva de Stephen R. Covey .pdf"><button type="button" id="download" download>Descargar</button> </a
           > &nbsp; &nbsp;
-          <a th:href ="@{/RegresaInicio}"
+          <a th:href ="@{/Regresa1}"
             ><button type="button" id="back">Regresar</button></a
           >
         </div>
@@ -86,9 +86,12 @@
           <form>
             <h3>Reseña del libro:</h3>
             <br />
-            <p>Casi todo el mundo intuye que su comportamiento, tanto en el trabajo como en la vida privada pordría mejorar en muchos aspectos, pero pocos saben cómo conseguirlo. Stephen R. Covey, el llamado Sócrates americano, no da consejos paternalistas ni se dedica a sermonear sin ton ni son. Su método es claro, certero y eficiente: un cursillo dividido en siete etapas que el lector deberá asimilar y poner en práctica por su propia cuenta, adaptándolas a su personalidad y aplicándolas libremente en todos los ámbitos de la vida empresarial. Para ello, el autor se sirve de anécdotas penetrantes y significativas destinadas a hacernos reflexionar sobre cada uno de nuestros actos y sobre el modo de acceder al cambio, a la verdadera efectividad: desde la visión personal hasta la renovación equilibrada, pasando por el liderazgo personal, la administración personal, el liderazgo interpersonal, la comunicación empática y la cooperación creativa. Teniendo en cuenta todo lo anterior, y a través del desarrollo de ciertos conceptos, el lector acaba comprendiendo que todo lo que hagamos deberá estar de acuerdo con lo que verdaderamente captamos de la realidad que nos rodea. Por tanto, si queremos cambiar la situación, deberemos cambiarnos a nosotros mismos con eficacia y para ello también modificar nuestras percepciones. El resultado es la construcción de una autoconfianza a prueba de bomba a través del desarrollo del propio carácter, de la integridad, la honestidad y la dignidad humana necesarias para transformar nuestro universo laboral en algo auténtico e intransferible.<br><br></p>
+            <div id="sectionone" th:each = "Libro1 : ${Libro1}">
+            <p th:text = "${Libro1.detalle}"><b></b></p>
             <a href="https://www.amazon.es/h%C3%A1bitos-altamente-efectiva-revisada-actualizada/dp/8408143980"><button type="button" id="more-info">Obtener mas Información</button> </a
               >&nbsp; &nbsp;
+              </div>
+              </form>
           <em></em>
         </div>
       </div>

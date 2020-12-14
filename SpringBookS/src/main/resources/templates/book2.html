@@ -31,9 +31,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" th:href="@{/INICIO}">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" th:href="@{/CONTACTOS}">Contactanos</a></li>
-            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/SINgup}">Inicia sesión</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Inicio2}">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Contactos2}">Contactanos</a></li>
+            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/Singup2}">Inicia sesión</a></li>
             
              <li class="dropdown" sec:authorize="isAuthenticated()" >
 			  <a class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,16 +63,16 @@
         </div>
 
         <!--Informacion del libro-->
-        <div id="sectionone">
-          <h3>Filosofía para Dummies</h3>
-          <h4>Martin Cohen</h4>
+        <div id="sectionone" th:each = "Libro2 : ${Libro2}">
+          <h3 th:text = "${Libro2.NombreLibro2}"></h3>
+          <h4 th:text = "${Libro2.autor2}"></h4>
           <p>Precio de compra: <strike> $ 16.95</strike></p>
-          <p>Nuestro precio: <b>Gratis</b></p>
+          <p>Nuestro precio: <b th:text = "${Libro2.precio2}"></b></p>
           <p>Edición N° 1 <br></p>
           <p>2013<br></p>
           <a  href="libros/Filosofía/Filosofía para Dummies - Cohen Martin.pdf"><button type="button" id="download" download>Descargar</button> </a
           >&nbsp; &nbsp;
-          <a th:href="@{/Regresando al Inicio}"
+          <a th:href="@{/Regresa2}"
             ><button type="button" id="back">Regresar</button></a
           >
         </div>
@@ -85,11 +85,12 @@
           <form>
             <h3>Reseña del libro:</h3>
             <br />
-            <p>Uno de los mayores atractivos de la filosofía es que te hace pensar mucho, para comprender los razonamientos e ideas de otros pensadores, y para desarrollar tus propias respuestas. Pero puede ocurrir que ¡acabes con más preguntas que al principio!.
-
-                Esta sencilla guía es como un agradable viaje a la historia de la filosofía, de la mano de un autor experimientado, que te acompañará en tu camino a través de terrenos como el ser, el conocimiento, la verdad o la belleza.<br><br></p>
+            <div id="sectionone" th:each = "Libro2 : ${Libro2}">
+            <p th:text = "${Libro2.detalle2}"><br><br></p>
             <a href="https://www.planetadelibros.com/libro-filosofia-para-dummies/241931"><button type="button" id="more-info">Obtener mas Información</button> </a
               >&nbsp; &nbsp;
+              </div>
+              </form>
           <em></em>
         </div>
       </div>

@@ -2,51 +2,54 @@ package com.Rigoberto.Aplication.Entidades;
 
 import java.io.Serializable;
 
-//Importaciones.
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "Libros")
-public class Libros implements Serializable {
+@Table(name = "Libro1") // Nombre de la tabla
+public class Libro1 implements Serializable {
 	private static final long serialVersionUID = 2L;
-	// Generacion automatica del id.
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long Id_Libro;
-	// Mapeo de las tablas de las bases de datos.
-	@Column(name = "Nombre_Libro", nullable = false, length = 200)
+	// Mapeo de la tabla libro1.
+	@Column(name = "Nombre_Libro", nullable = false, length = 200) // Nombre de la columna
 	private String NombreLibro;
-	@Column(name = "Descripcion", nullable = false, length = 5000)
-	private String descripcion;
-	@Column(name = "Precio", nullable = false, length = 20)
+	@Column(name = "Autor", nullable = false, length = 200) // Nombre de la columna
+	private String Autor;
+	@Column(name = "Detalle", nullable = false, length = 5000) // Nombre de la columna
+	private String detalle;
+	@Column(name = "Precio", nullable = false, length = 20) // Nombre de la columna
 	private String precio;
-	@Column(name = "Link", nullable = false, length = 500)
+	@Column(name = "Link", nullable = false, length = 500) // Nombre de la columna
 	private String link;
-	@Column(name = "Foto", nullable = false, length = 400)
+	@Column(name = "Foto", nullable = false, length = 400) // Nombre de la columna
 	private String foto;
 
 	// Constructor vacio
-	protected Libros() {
+	protected Libro1() {
 	}
 
-	// Constructor
-	public Libros(long IDlibro, String nombrelibro, String desCripcion, String pRecio, String linK, String fotO) {
+	// Constructor con parametros 
+	public Libro1(long IDlibro, String nombrelibro, String AUTOR, String desCripcion, String pRecio, String linK,
+			String fotO) {
 		this.Id_Libro = IDlibro;
 		this.NombreLibro = nombrelibro;
-		this.descripcion = desCripcion;
+		this.Autor = AUTOR;
+		this.detalle = desCripcion;
 		this.precio = pRecio;
 		this.link = linK;
 		this.foto = fotO;
 	}
-
 	// Getters and Setters.
+
 	public long getId_Libro() {
 		return Id_Libro;
 	}
@@ -63,12 +66,20 @@ public class Libros implements Serializable {
 		NombreLibro = nombreLibro;
 	}
 
-	public String getDescripcion() {
-		return descripcion;
+	public String getAutor() {
+		return Autor;
 	}
 
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
+	public void setAutor(String autor) {
+		Autor = autor;
+	}
+
+	public String getDetalle() {
+		return detalle;
+	}
+
+	public void setDetalle(String detalle) {
+		this.detalle = detalle;
 	}
 
 	public String getPrecio() {
@@ -98,4 +109,5 @@ public class Libros implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+
 }

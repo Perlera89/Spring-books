@@ -22,8 +22,8 @@ public class Categorias implements Serializable {
 	// Generacion automatica del id.
 	private long Id_Categorias;
 	// Mapeo de las tablas de las bases de datos.
-	@Column(name = "Nombre_Categoria", nullable = false, length = 50)
-	private String Nombre_categoria;
+	@Column(name = "Nombre_categoria", nullable = false, length = 50)
+	private String Nombre_Categoria;
 
 	// Constructor vacio
 	protected Categorias() {
@@ -32,7 +32,7 @@ public class Categorias implements Serializable {
 	// Constructor
 	public Categorias(long IdCategorias, String NombreCategoria) {
 		this.Id_Categorias = IdCategorias;
-		this.Nombre_categoria = NombreCategoria;
+		this.Nombre_Categoria = NombreCategoria;
 	}
 
 	// Getters And setters.
@@ -45,11 +45,11 @@ public class Categorias implements Serializable {
 	}
 
 	public String getNombreCategoria() {
-		return Nombre_categoria;
+		return Nombre_Categoria;
 	}
 
 	public void setNombreCategoria(String nombreCategoria) {
-		this.Nombre_categoria = nombreCategoria;
+		this.Nombre_Categoria = nombreCategoria;
 	}
 
 	public static long getSerialversionuid() {

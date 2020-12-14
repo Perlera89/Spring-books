@@ -31,9 +31,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" th:href="@{/Regresando Al INICIO}">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" th:href="@{/CONTACTANOs}">Contactanos</a></li>
-            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/SIN gup}">Inicia sesión</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Inicio3}">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/Contactos3}">Contactanos</a></li>
+            <li sec:authorize="!isAuthenticated()" class="nav-item"><a class="nav-link" th:href="@{/Singup3}">Inicia sesión</a></li>
             
              <li class="dropdown" sec:authorize="isAuthenticated()" >
 			  <a class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,16 +63,16 @@
         </div>
 
         <!--Informacion del libro-->
-        <div id="sectionone">
-          <h3>Fundamentos de física</h3>
-          <h4>Raymond A. Serway & Chris Vuille</h4>
+        <div id="sectionone" th:each = "Libro3 : ${Libro3}">
+          <h3 th:text = "${Libro3.NombreLibro3}"></h3>
+          <h4 th:text = "${Libro3.autor3}"></h4>
           <p>Precio de compra: <strike> $ 16.95</strike></p>
-          <p>Nuestro precio: <b>Gratis</b></p>
+          <p>Nuestro precio: <b th:text = "${Libro3.precio3}"></b></p>
           <p>Edición N° 10 <br></p>
           <p>2016<br></p>
           <a href="libros/Física/Fundamentos de física.pdf"><button type="button" id="download">Descargar</button> </a
           >&nbsp; &nbsp;
-          <a th:href="@{/Regresando al INicio}"
+          <a th:href="@{/Regresa3}"
             ><button type="button" id="back">Regresar</button></a
           >
         </div>
@@ -85,11 +85,12 @@
           <form>
             <h3>Reseña del libro:</h3>
             <br />
-            <p>Mientras que la física puede parecer desafiante, su calidad verdadera es la simplicidad de teorías físicas fundamentales y conceptos que pueden enriquecer su opinión del mundo que le rodea. 
-                Fundamentos de Física, octava edición, proporciona una estrategia clara para conectar esas teorías con un acercamiento constante para la solución de problemas, reforzando cuidadosamente esta metodología a través del texto y conectándola con los ejemplos del mundo real. 
-                El libro está compuesto de 30 capítulos organizados en seis partes: Mecánica, Termodinámica, Vibraciones y ondas, Electricidad y magnetismo, Luz y óptica, y Física moderna.<br><br></p>
+            <div id="sectionone" th:each = "Libro3: ${Libro3}">
+            <p th:text = "${Libro3.detalle3}"><br><br></p>
             <a href="https://www.gonvill.com.mx/libro/fundamentos-de-fisica-vol-1-8ed-_17550341"><button type="button" id="more-info">Obtener mas Información</button> </a
               >&nbsp; &nbsp;
+              </div>
+              </form>
           <em></em>
         </div>
       </div>

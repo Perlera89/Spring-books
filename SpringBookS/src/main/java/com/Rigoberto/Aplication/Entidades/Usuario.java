@@ -19,58 +19,58 @@ public class Usuario implements Serializable {
 	// Generacion automatica del id.
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long Id_Usuario;
+	private long Id_user;
 	// Mapeo de las tablas de las bases de datos.
-	@Column(name = "Nombre_Usuario", nullable = false, length = 50)
-	private String NombreUsuario;
-	@Column(name = "Email", nullable = false, length = 50)
-	private String email;
-	@Column(name = "Contraseña", nullable = false, length = 50)
-	private String contraseña;
+	@Column(name = "username", nullable = false, length = 50)
+	private String Username;
+	@Column(name = "email", nullable = false, length = 50)
+	private String Email;
+	@Column(name = "password", nullable = false, length = 50)
+	private String Password;
 
 	// Constructor vacio
 	protected Usuario() {
 	}
 	// Constructor
 
-	public Usuario(Integer IDUsuario, String Nombreusuario, String emaIl, String cOntraseña) {
-		this.Id_Usuario = IDUsuario;
-		this.NombreUsuario = Nombreusuario;
-		this.email = emaIl;
-		this.contraseña = cOntraseña;
+	public Usuario(Integer Idsuario, String Nombreusuario, String emaIl, String Contraseña) {
+		this.Id_user = Idsuario;
+		this.Username = Nombreusuario;
+		this.Email = emaIl;
+		this.Password = Contraseña;
+	}
+	// Getters and Setters.
+
+	public long getId_user() {
+		return Id_user;
 	}
 
-//Getters and Setters.    
-	public long getId_Usuario() {
-		return Id_Usuario;
+	public void setId_user(long id_user) {
+		Id_user = id_user;
 	}
 
-	public void setId_Usuario(long id_Usuario) {
-		Id_Usuario = id_Usuario;
+	public String getUsername() {
+		return Username;
 	}
 
-	public String getNombreUsuario() {
-		return NombreUsuario;
-	}
-
-	public void setNombreUsuario(String nombreUsuario) {
-		NombreUsuario = nombreUsuario;
+	public void setUsername(String username) {
+		Username = username;
 	}
 
 	public String getEmail() {
-		return email;
+		return Email;
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		Email = email;
 	}
 
-	public String getContraseña() {
-		return contraseña;
+	public String getPassword() {
+		return Password;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setPassword(String password) {
+		Password = password;
 	}
 
 	public static long getSerialversionuid() {
