@@ -26,6 +26,14 @@ public class Libro4 implements Serializable {
 	private String autor4;
 	@Column(name = "Detalle4", nullable = false, length = 5000) // Nombre de la columna
 	private String detalle4;
+	@Column(name = "PrecioCompra4", nullable = false, length = 25) // Nombre de la columna
+	private String precioCompra4;
+	@Column(name = "Valor4", nullable = false, length = 25) // Nombre de la columna
+	private String valor4;
+	@Column(name = "Edicion4", nullable = false, length = 25) // Nombre de la columna
+	private String edicion4;
+	@Column(name = "Año4") // Nombre de la columna
+	private int fecha4;
 	@Column(name = "Precio4", nullable = false, length = 20) // Nombre de la columna
 	private String precio4;
 	@Column(name = "Link4", nullable = false, length = 500) // Nombre de la columna
@@ -39,7 +47,7 @@ public class Libro4 implements Serializable {
 
 	// Constructor con parametros
 	public Libro4(long IDlibro4, String nombrelibro4, String AUTOR4, String desCripcion4, String pRecio4, String linK4,
-			String fotO4) {
+			String fotO4, int Fecha4, String Edicion4, String PreciodeCompra4, String Valor4) {
 		this.Id_Libro4 = IDlibro4;
 		this.NombreLibro4 = nombrelibro4;
 		this.autor4 = AUTOR4;
@@ -47,7 +55,12 @@ public class Libro4 implements Serializable {
 		this.precio4 = pRecio4;
 		this.link4 = linK4;
 		this.foto4 = fotO4;
+		this.fecha4 = Fecha4;
+		this.edicion4 = Edicion4;
+		this.precioCompra4 = PreciodeCompra4;
+		this.valor4 = Valor4;
 	}
+	// Getters and Setters.
 
 	public long getId_Libro4() {
 		return Id_Libro4;
@@ -81,6 +94,38 @@ public class Libro4 implements Serializable {
 		this.detalle4 = detalle4;
 	}
 
+	public String getPrecioCompra4() {
+		return precioCompra4;
+	}
+
+	public void setPrecioCompra4(String precioCompra4) {
+		this.precioCompra4 = precioCompra4;
+	}
+
+	public String getValor4() {
+		return valor4;
+	}
+
+	public void setValor4(String valor4) {
+		this.valor4 = valor4;
+	}
+
+	public String getEdicion4() {
+		return edicion4;
+	}
+
+	public void setEdicion4(String edicion4) {
+		this.edicion4 = edicion4;
+	}
+
+	public int getFecha4() {
+		return fecha4;
+	}
+
+	public void setFecha4(int fecha4) {
+		this.fecha4 = fecha4;
+	}
+
 	public String getPrecio4() {
 		return precio4;
 	}
@@ -108,4 +153,5 @@ public class Libro4 implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+
 }

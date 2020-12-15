@@ -26,6 +26,14 @@ public class Libro2 implements Serializable {
 	private String autor2;
 	@Column(name = "Detalle2", nullable = false, length = 5000) // Nombre de la columna
 	private String detalle2;
+	@Column(name = "PrecioCompra2", nullable = false, length = 25) // Nombre de la columna
+	private String precioCompra2;
+	@Column(name = "Valor2", nullable = false, length = 25) // Nombre de la columna
+	private String valor2;
+	@Column(name = "Edicion2", nullable = false, length = 25) // Nombre de la columna
+	private String edicion2;
+	@Column(name = "Año2") // Nombre de la columna
+	private int fecha2;
 	@Column(name = "Precio2", nullable = false, length = 20) // Nombre de la columna
 	private String precio2;
 	@Column(name = "Link2", nullable = false, length = 500) // Nombre de la columna
@@ -39,7 +47,7 @@ public class Libro2 implements Serializable {
 
 	// Constructor con parametros
 	public Libro2(long IDlibro2, String nombrelibro2, String AUTOR2, String desCripcion2, String pRecio2, String linK2,
-			String fotO2) {
+			String fotO2, int Fecha2, String Edicion2, String PreciodeCompra2, String Valor2) {
 		this.Id_Libro2 = IDlibro2;
 		this.NombreLibro2 = nombrelibro2;
 		this.autor2 = AUTOR2;
@@ -47,8 +55,11 @@ public class Libro2 implements Serializable {
 		this.precio2 = pRecio2;
 		this.link2 = linK2;
 		this.foto2 = fotO2;
+		this.fecha2 = Fecha2;
+		this.edicion2 = Edicion2;
+		this.precioCompra2 = PreciodeCompra2;
+		this.valor2 = Valor2;
 	}
-
 	// Getters and Setters.
 
 	public long getId_Libro2() {
@@ -81,6 +92,38 @@ public class Libro2 implements Serializable {
 
 	public void setDetalle2(String detalle2) {
 		this.detalle2 = detalle2;
+	}
+
+	public String getPrecioCompra2() {
+		return precioCompra2;
+	}
+
+	public void setPrecioCompra2(String precioCompra2) {
+		this.precioCompra2 = precioCompra2;
+	}
+
+	public String getValor2() {
+		return valor2;
+	}
+
+	public void setValor2(String valor2) {
+		this.valor2 = valor2;
+	}
+
+	public String getEdicion2() {
+		return edicion2;
+	}
+
+	public void setEdicion2(String edicion2) {
+		this.edicion2 = edicion2;
+	}
+
+	public int getFecha2() {
+		return fecha2;
+	}
+
+	public void setFecha2(int fecha2) {
+		this.fecha2 = fecha2;
 	}
 
 	public String getPrecio2() {

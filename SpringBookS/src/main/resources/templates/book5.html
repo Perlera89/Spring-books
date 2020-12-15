@@ -66,11 +66,11 @@
         <div id="sectionone" th:each = "Libro5 : ${Libro5}">
           <h3 th:text = "${Libro5.NombreLibro5}"></h3>
           <h4 th:text = "${Libro5.autor5}"></h4>
-          <p>Precio de compra: <strike> $ 7.59</strike></p>
+          <p th:text = "${Libro5.precioCompra5}"><h5><strike th:text = "${Libro5.valor5}"></strike></h5></p>
           <p>Nuestro precio: <b th:text = "${Libro5.precio5}"></b></p>
-          <p>Edición N° 3 <br></p>
-          <p>2019<br></p>
-          <a href="libros/Programación/Programacion web.pdf"><button type="button" id="download" >Descargar</button> </a
+          <p th:text = "${Libro5.edicion5}"> <br></p>
+          <p th:text = "${Libro5.fecha5}"><br></p>
+          <a th:href= "${Libro5.link5}" target="_blank"><button type="button" id="download" >Descargar</button> </a
           >&nbsp; &nbsp;
           <a th:href="@{/Regresa5}"
             ><button type="button" id="back">Regresar</button></a

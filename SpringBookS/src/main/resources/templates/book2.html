@@ -66,11 +66,11 @@
         <div id="sectionone" th:each = "Libro2 : ${Libro2}">
           <h3 th:text = "${Libro2.NombreLibro2}"></h3>
           <h4 th:text = "${Libro2.autor2}"></h4>
-          <p>Precio de compra: <strike> $ 16.95</strike></p>
+          <p th:text = "${Libro2.precioCompra2}"><h5><strike th:text = "${Libro2.valor2}"></strike></h5></p>
           <p>Nuestro precio: <b th:text = "${Libro2.precio2}"></b></p>
-          <p>Edición N° 1 <br></p>
-          <p>2013<br></p>
-          <a  href="libros/Filosofía/Filosofía para Dummies - Cohen Martin.pdf"><button type="button" id="download" download>Descargar</button> </a
+          <p th:text = "${Libro2.edicion2}"><br></p>
+          <p th:text = "${Libro2.fecha2}"><br></p>
+          <a th:href= "${Libro2.link2}" target="_blank"><button type="button" id="download" download>Descargar</button> </a
           >&nbsp; &nbsp;
           <a th:href="@{/Regresa2}"
             ><button type="button" id="back">Regresar</button></a

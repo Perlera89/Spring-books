@@ -67,11 +67,11 @@
         <div id="sectionone" th:each = "Libro1 : ${Libro1}">
           <h3 th:text = "${Libro1.NombreLibro}"></h3>
           <h4 th:text = "${Libro1.autor}"></h4>
-          <p>Precio de compra: <strike> $ 9.45</strike></p>
+          <p th:text = "${Libro1.precioCompra}"><h5><strike th:text = "${Libro1.valor}"></strike></h5></p>
           <p>Nuestro precio: <b th:text = "${Libro1.precio}"></b></p>
-          <p>Edición Paidos <br></p>
-          <p>2015<br></p>
-          <a href="Libros/Desarrollo Personal/Los 7 hábitos de la gente altamente efectiva de Stephen R. Covey .pdf"><button type="button" id="download" download>Descargar</button> </a
+          <p th:text = "${Libro1.edicion}"> <br></p>
+          <p th:text = "${Libro1.fecha}"><br></p>
+          <a th:href= "${Libro1.link}" target="_blank"><button type="button" id="download" download>Descargar</button> </a
           > &nbsp; &nbsp;
           <a th:href ="@{/Regresa1}"
             ><button type="button" id="back">Regresar</button></a

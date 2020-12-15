@@ -26,6 +26,14 @@ public class Libro1 implements Serializable {
 	private String Autor;
 	@Column(name = "Detalle", nullable = false, length = 5000) // Nombre de la columna
 	private String detalle;
+	@Column(name = "PrecioCompra", nullable = false, length = 25) // Nombre de la columna
+	private String precioCompra;
+	@Column(name = "Valor", nullable = false, length = 25) // Nombre de la columna
+	private String valor;
+	@Column(name = "Edicion", nullable = false, length = 25) // Nombre de la columna
+	private String edicion;
+	@Column(name = "Año") // Nombre de la columna
+	private int fecha;
 	@Column(name = "Precio", nullable = false, length = 20) // Nombre de la columna
 	private String precio;
 	@Column(name = "Link", nullable = false, length = 500) // Nombre de la columna
@@ -37,9 +45,9 @@ public class Libro1 implements Serializable {
 	protected Libro1() {
 	}
 
-	// Constructor con parametros 
+	// Constructor con parametros
 	public Libro1(long IDlibro, String nombrelibro, String AUTOR, String desCripcion, String pRecio, String linK,
-			String fotO) {
+			String fotO, int Fecha, String Edicion, String PrecioCompra, String Valor) {
 		this.Id_Libro = IDlibro;
 		this.NombreLibro = nombrelibro;
 		this.Autor = AUTOR;
@@ -47,6 +55,10 @@ public class Libro1 implements Serializable {
 		this.precio = pRecio;
 		this.link = linK;
 		this.foto = fotO;
+		this.fecha = Fecha;
+		this.edicion = Edicion;
+		this.precioCompra = PrecioCompra;
+		this.valor = Valor;
 	}
 	// Getters and Setters.
 
@@ -82,6 +94,38 @@ public class Libro1 implements Serializable {
 		this.detalle = detalle;
 	}
 
+	public String getPrecioCompra() {
+		return precioCompra;
+	}
+
+	public void setPrecioCompra(String precioCompra) {
+		this.precioCompra = precioCompra;
+	}
+
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+
+	public String getEdicion() {
+		return edicion;
+	}
+
+	public void setEdicion(String edicion) {
+		this.edicion = edicion;
+	}
+
+	public int getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(int fecha) {
+		this.fecha = fecha;
+	}
+
 	public String getPrecio() {
 		return precio;
 	}
@@ -109,5 +153,4 @@ public class Libro1 implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-
 }
